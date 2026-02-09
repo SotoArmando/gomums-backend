@@ -94,11 +94,15 @@ def test_openai_config():
         print("  Add OPENAI_API_KEY to your .env file to enable AI generation")
         return False
     
-    if api_key.startswith('sk-') or api_key.startswith('your-'):
+    if api_key.startswith('sk-'):
         print("✓ OPENAI_API_KEY is configured")
         print(f"  Key format looks valid (starts with expected prefix)")
         print("\n✅ OpenAI configuration test passed!\n")
         return True
+    elif api_key.startswith('your-'):
+        print("⚠️  OPENAI_API_KEY appears to be a placeholder value")
+        print("  Please replace 'your-openai-api-key-here' with your actual API key")
+        return False
     else:
         print("⚠️  OPENAI_API_KEY format may be invalid")
         print("  OpenAI API keys typically start with 'sk-'")

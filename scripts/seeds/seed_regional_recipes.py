@@ -93,7 +93,7 @@ Dishes are often hearty, comfort-food style with simple seasoning."""
         
         prompt = f"""Generate {recipes_to_generate} authentic {region_name} recipes using these locally available ingredients:
 
-{', '.join(ingredients[:50])}  # Limit to first 50 for prompt size
+{', '.join(ingredients[:50])}  # Limiting to first 50 ingredients to fit within prompt token limits
 
 Regional context: {cuisine_context}
 

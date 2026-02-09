@@ -63,7 +63,7 @@ A comprehensive AI-powered recipe generation system that creates 100 culturally-
 
 #### Step 1: Validate Setup
 ```bash
-cd /home/runner/work/gomums-backend/gomums-backend
+cd gomums-backend  # Navigate to your project root directory
 python scripts/tests/test_regional_recipes.py
 ```
 

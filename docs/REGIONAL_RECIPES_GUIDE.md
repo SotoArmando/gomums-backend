@@ -36,7 +36,7 @@ The script `scripts/seeds/seed_regional_recipes.py`:
 Run the script interactively to choose what to generate:
 
 ```bash
-cd /home/runner/work/gomums-backend/gomums-backend
+cd gomums-backend  # Navigate to your project root directory
 python scripts/seeds/seed_regional_recipes.py
 ```
 
