@@ -264,6 +264,33 @@ Follow [docs/BACKEND_CHECKLIST.md](docs/BACKEND_CHECKLIST.md) for detailed guida
 - User preferences & stats
 - Content management
 
+## 🌎 Regional Recipe Generation
+
+GoMums now supports AI-powered regional recipe generation! Generate 100 culturally-authentic recipes for different regions using local ingredient data.
+
+### Supported Regions
+- **🇩🇴 Dominican Republic** - Traditional Caribbean cuisine
+- **🌾 Kansas** - Midwestern American & BBQ
+
+### Quick Start
+
+```bash
+# Generate recipes (requires OpenAI API key)
+python scripts/seeds/seed_regional_recipes.py
+```
+
+**What it does:**
+- Reads local ingredient prices from CSV files
+- Generates authentic regional recipes using AI
+- Includes nutrition info, difficulty levels, and step-by-step instructions
+- Seeds recipes directly into your database
+
+**Requirements:**
+- OpenAI API key (add `OPENAI_API_KEY` to `.env`)
+- Cost: ~$1-2 for 200 recipes
+
+📖 See [docs/REGIONAL_RECIPES_GUIDE.md](docs/REGIONAL_RECIPES_GUIDE.md) for detailed instructions.
+
 ## 🐛 Troubleshooting
 
 ### Server won't start
