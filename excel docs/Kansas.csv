@@ -1,0 +1,178 @@
+Item,Price (USD),Range Low,Range High
+Restaurants,,,
+Meal at an Inexpensive Restaurant,25.00 $,14.00 $,45.00 $
+"Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)",85.00 $,67.75 $,150.00 $
+Combo Meal at McDonald's (or Equivalent Fast-Food Meal),12.50 $,12.00 $,15.00 $
+Domestic Draft Beer (0.5 Liter),7.00 $,5.00 $,8.00 $
+Imported Beer (0.33 Liter Bottle),8.00 $,5.00 $,10.00 $
+Cappuccino (Regular Size),5.41 $,2.50 $,7.50 $
+"Soft Drink (Coca-Cola or Pepsi, 0.33 Liter Bottle)",3.27 $,1.89 $,7.00 $
+Bottled Water (0.33 Liter),2.51 $,1.89 $,4.50 $
+Markets,,,
+"Milk (Regular, 1 Liter)",1.20 $,0.87 $,1.45 $
+Fresh White Bread (500 g Loaf),3.57 $,2.48 $,6.61 $
+White Rice (1 kg),5.25 $,3.53 $,7.28 $
+"Eggs (12, Large Size)",4.18 $,2.49 $,5.32 $
+Local Cheese (1 kg),14.22 $,8.82 $,19.84 $
+Chicken Fillets (1 kg),9.67 $,5.49 $,13.23 $
+Beef Round or Equivalent Back Leg Red Meat (1 kg),14.16 $,9.92 $,17.61 $
+Apples (1 kg),4.44 $,1.54 $,5.46 $
+Bananas (1 kg),1.58 $,1.08 $,1.96 $
+Oranges (1 kg),4.44 $,2.40 $,11.00 $
+Tomatoes (1 kg),5.47 $,3.28 $,6.59 $
+Potatoes (1 kg),3.15 $,1.10 $,6.15 $
+Onions (1 kg),3.39 $,2.76 $,4.61 $
+Lettuce (1 Head),2.30 $,1.88 $,2.99 $
+Bottled Water (1.5 Liter),2.13 $,1.64 $,2.34 $
+Bottle of Wine (Mid-Range),15.30 $,8.00 $,25.00 $
+Domestic Beer (0.5 Liter Bottle),1.98 $,1.79 $,2.10 $
+Imported Beer (0.33 Liter Bottle),3.88 $,1.75 $,8.00 $
+"Cigarettes (Pack of 20, Marlboro)",8.03 $,7.29 $,10.40 $
+Transportation,,,
+One-Way Ticket (Local Transport),0.00 $,0.00 $,0.00 $
+Monthly Public Transport Pass (Regular Price),0.00 $,0.00 $,0.00 $
+Taxi Start (Standard Tariff),2.50 $,2.50 $,2.50 $
+Taxi 1 km (Standard Tariff),1.24 $,1.24 $,1.24 $
+Taxi 1 Hour Waiting (Standard Tariff),60.00 $,24.00 $,60.00 $
+Gasoline (1 Liter),0.77 $,0.72 $,0.84 $
+Volkswagen Golf 1.5 (or Equivalent New Compact Car),"35,052.00 $","35,052.00 $","37,222.74 $"
+Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car),"25,019.07 $","24,649.00 $","26,592.14 $"
+Utilities (Monthly),,,
+"Basic Utilities for 85 m2 Apartment (Electricity, Heating, Cooling, Water, Garbage)",202.26 $,161.21 $,218.66 $
+"Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)",63.64 $,30.00 $,100.00 $
+"Broadband Internet (Unlimited Data, 60 Mbps or Higher)",68.92 $,50.00 $,100.00 $
+Sports And Leisure,,,
+Monthly Fitness Club Membership,36.67 $,35.00 $,40.00 $
+"Tennis Court Rental (1 Hour, Weekend)",33.75 $,30.00 $,40.00 $
+Cinema Ticket (International Release),15.00 $,12.00 $,18.00 $
+Childcare,,,
+"Private Full-Day Preschool or Kindergarten, Monthly Fee per Child","1,367.48 $","1,050.00 $","2,046.25 $"
+"International Primary School, Annual Tuition per Child","25,453.89 $","16,100.00 $","29,500.00 $"
+Clothing And Shoes,,,
+Jeans (Levi's 501 or Similar),60.05 $,35.00 $,80.00 $
+Summer Dress in a Chain Store (e.g. Zara or H&M),43.05 $,25.00 $,50.00 $
+Nike Running Shoes (Mid-Range),102.85 $,75.00 $,129.00 $
+Men's Leather Business Shoes,133.28 $,80.00 $,200.00 $
+Rent Per Month,,,
+1 Bedroom Apartment in City Centre,"1,353.75 $","1,000.00 $","1,580.00 $"
+1 Bedroom Apartment Outside of City Centre,"1,001.78 $",850.00 $,"1,344.00 $"
+3 Bedroom Apartment in City Centre,"2,623.75 $","2,000.00 $","3,990.00 $"
+3 Bedroom Apartment Outside of City Centre,"1,668.00 $","1,460.00 $","2,000.00 $"
+Buy Apartment Price,,,
+Price per Square Meter to Buy Apartment in City Centre,"2,344.33 $","1,829.86 $","2,690.00 $"
+Price per Square Meter to Buy Apartment Outside of Centre,"1,891.54 $","1,614.59 $","2,067.00 $"
+Salaries And Financing,,,
+Average Monthly Net Salary (After Tax),"3,881.76 $",,
+Annual Mortgage Interest Rate (20-Year Fixed),6.35 $,6.00 $,6.80 $
+Common Household Ingredients,,,
+Red Kidney Beans Dried (1 kg),3.50 $,2.50 $,5.00 $
+Black Beans Dried (1 kg),3.30 $,2.40 $,4.80 $
+Pinto Beans Dried (1 kg),3.20 $,2.30 $,4.50 $
+Green Lentils Dried (1 kg),3.80 $,2.80 $,5.20 $
+Chickpeas / Garbanzo Beans Dried (1 kg),4.00 $,3.00 $,5.50 $
+Brown Rice (1 kg),3.80 $,2.50 $,5.50 $
+Russet Potatoes (1 kg),2.20 $,1.10 $,3.50 $
+Sweet Potatoes (1 kg),3.30 $,2.20 $,4.80 $
+Carrots (1 kg),2.40 $,1.50 $,3.80 $
+Celery (Bunch),2.50 $,1.50 $,3.50 $
+Broccoli (1 kg),4.40 $,3.00 $,6.00 $
+Cauliflower (1 Head),3.50 $,2.50 $,5.00 $
+Green Cabbage (1 Head),2.00 $,1.20 $,3.00 $
+Spinach Fresh (Bunch),2.80 $,2.00 $,4.00 $
+Kale (Bunch),2.50 $,1.80 $,3.50 $
+Romaine Lettuce (1 Head),2.50 $,1.80 $,3.50 $
+Cucumbers (1 kg),3.30 $,2.20 $,4.80 $
+Zucchini (1 kg),3.50 $,2.40 $,5.00 $
+Bell Peppers Green (1 kg),5.50 $,3.80 $,7.50 $
+Bell Peppers Red (1 kg),6.60 $,4.50 $,9.00 $
+Jalapeño Peppers (1 kg),4.40 $,3.00 $,6.00 $
+Green Beans (1 kg),4.80 $,3.30 $,6.50 $
+Corn on the Cob (Each),0.75 $,0.50 $,1.25 $
+Mushrooms White (250 g),2.50 $,1.80 $,3.50 $
+Garlic (Head),0.75 $,0.50 $,1.25 $
+Ginger Root (100 g),1.00 $,0.60 $,1.50 $
+Yellow Onion (1 kg),2.80 $,1.80 $,4.00 $
+Red Onion (1 kg),3.30 $,2.20 $,4.80 $
+Green Onions / Scallions (Bunch),1.20 $,0.80 $,1.80 $
+Fresh Cilantro (Bunch),1.00 $,0.60 $,1.50 $
+Fresh Parsley (Bunch),1.00 $,0.60 $,1.50 $
+Fresh Basil (Bunch),2.50 $,1.80 $,3.50 $
+Fresh Dill (Bunch),2.00 $,1.30 $,3.00 $
+Avocado (Each),1.50 $,1.00 $,2.50 $
+Lemons (1 kg),4.40 $,3.00 $,6.50 $
+Limes (1 kg),4.80 $,3.30 $,7.00 $
+Grapes (1 kg),5.50 $,3.50 $,8.00 $
+Strawberries (500 g),3.50 $,2.50 $,5.00 $
+Blueberries (350 g),4.00 $,2.80 $,5.50 $
+Watermelon (Each),6.00 $,4.00 $,9.00 $
+Peaches (1 kg),5.50 $,3.80 $,7.50 $
+Pears (1 kg),4.40 $,3.00 $,6.00 $
+Cantaloupe (Each),3.50 $,2.50 $,5.00 $
+Ground Beef 80/20 (1 kg),11.00 $,8.80 $,14.30 $
+Pork Loin (1 kg),10.50 $,7.70 $,14.00 $
+Pork Chops (1 kg),9.90 $,7.00 $,13.20 $
+Whole Chicken (1 kg),5.50 $,3.80 $,7.50 $
+Chicken Thighs (1 kg),6.60 $,4.40 $,9.00 $
+Chicken Wings (1 kg),7.70 $,5.50 $,10.00 $
+Ground Turkey (1 kg),8.80 $,6.60 $,11.00 $
+Bacon (500 g),6.50 $,4.50 $,9.00 $
+Pork Sausage Links (500 g),5.00 $,3.50 $,7.00 $
+Hot Dogs / Frankfurters (Pack of 8),4.00 $,2.80 $,5.50 $
+Deli Ham (250 g),4.50 $,3.00 $,6.00 $
+Fresh Catfish Fillets (1 kg),15.40 $,11.00 $,20.00 $
+Fresh Tilapia Fillets (1 kg),13.20 $,9.90 $,17.60 $
+Frozen Shrimp (1 kg),16.50 $,11.00 $,22.00 $
+Canned Tuna (170 g),1.80 $,1.20 $,2.50 $
+Canned Salmon (400 g),5.50 $,3.80 $,7.50 $
+Cheddar Cheese Block (1 kg),11.00 $,8.00 $,14.50 $
+Shredded Mozzarella (350 g),4.00 $,2.80 $,5.50 $
+Cream Cheese (250 g),3.50 $,2.50 $,5.00 $
+Sour Cream (500 ml),3.00 $,2.00 $,4.50 $
+Butter (250 g),4.50 $,3.50 $,6.00 $
+Heavy Cream (500 ml),4.00 $,3.00 $,5.50 $
+Cottage Cheese (500 g),3.50 $,2.50 $,5.00 $
+Plain Yogurt (500 ml),3.00 $,2.00 $,4.50 $
+Greek Yogurt (500 g),4.50 $,3.50 $,6.00 $
+Vegetable Oil / Canola Oil (1 Liter),3.50 $,2.50 $,5.00 $
+Corn Oil (1 Liter),4.00 $,3.00 $,5.50 $
+Extra Virgin Olive Oil (500 ml),7.00 $,5.00 $,10.00 $
+White Vinegar (500 ml),1.80 $,1.20 $,2.50 $
+Apple Cider Vinegar (500 ml),3.50 $,2.50 $,5.00 $
+Tomato Sauce (400 g),1.50 $,1.00 $,2.20 $
+Tomato Paste (170 g),1.20 $,0.80 $,1.80 $
+Canned Diced Tomatoes (400 g),1.50 $,1.00 $,2.20 $
+Granulated White Sugar (1 kg),2.20 $,1.50 $,3.00 $
+Brown Sugar (1 kg),3.00 $,2.20 $,4.00 $
+All-Purpose Flour (1 kg),1.80 $,1.20 $,2.50 $
+Cornmeal (1 kg),2.80 $,2.00 $,4.00 $
+Baking Powder (250 g),3.00 $,2.00 $,4.50 $
+Baking Soda (500 g),1.50 $,1.00 $,2.20 $
+Old-Fashioned Oats (500 g),3.50 $,2.50 $,5.00 $
+Spaghetti Pasta (500 g),1.80 $,1.20 $,2.50 $
+Elbow Macaroni (500 g),1.60 $,1.10 $,2.30 $
+Penne Pasta (500 g),1.80 $,1.20 $,2.50 $
+Sandwich Bread Whole Wheat (500 g),3.80 $,2.50 $,5.50 $
+Hamburger Buns (Pack of 8),3.00 $,2.00 $,4.50 $
+Tortillas Flour (Pack of 10),3.50 $,2.50 $,5.00 $
+Saltine Crackers (250 g),2.50 $,1.80 $,3.50 $
+Peanut Butter (500 g),4.50 $,3.00 $,6.50 $
+Ground Coffee (350 g),8.00 $,5.50 $,11.00 $
+Tea Bags (Pack of 20),3.50 $,2.50 $,5.00 $
+Honey (500 g),7.00 $,5.00 $,10.00 $
+Maple Syrup (350 ml),8.00 $,6.00 $,12.00 $
+Salt (1 kg),1.20 $,0.80 $,1.80 $
+Black Pepper Ground (50 g),3.50 $,2.50 $,5.00 $
+Dried Oregano (50 g),3.00 $,2.00 $,4.50 $
+Chili Powder (70 g),3.50 $,2.50 $,5.00 $
+Cumin Ground (50 g),3.50 $,2.50 $,5.00 $
+Paprika (70 g),3.50 $,2.50 $,5.00 $
+Garlic Powder (90 g),3.50 $,2.50 $,5.00 $
+Chicken Broth (1 Liter),3.00 $,2.00 $,4.50 $
+Soy Sauce (300 ml),3.00 $,2.00 $,4.50 $
+Ketchup (400 g),3.00 $,2.00 $,4.50 $
+Yellow Mustard (250 g),2.50 $,1.50 $,3.50 $
+Mayonnaise (400 g),4.50 $,3.00 $,6.50 $
+Hot Sauce (150 ml),3.00 $,2.00 $,4.50 $
+Worcestershire Sauce (300 ml),3.50 $,2.50 $,5.00 $
+Ranch Dressing (500 ml),4.00 $,3.00 $,5.50 $
+BBQ Sauce (500 ml),3.50 $,2.50 $,5.00 $

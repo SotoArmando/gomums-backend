@@ -1,0 +1,166 @@
+Item,Price (RD$),Range Low,Range High
+Restaurants,,,
+Meal at an Inexpensive Restaurant,600.00 RD$,300.00 RD$,"1,000.00 RD$"
+"Meal for Two at a Mid-Range Restaurant (Three Courses, Without Drinks)","3,090.00 RD$","2,500.00 RD$","6,000.00 RD$"
+Combo Meal at McDonald's (or Equivalent Fast-Food Meal),450.00 RD$,440.00 RD$,500.00 RD$
+Domestic Draft Beer (0.5 Liter),150.00 RD$,100.00 RD$,300.00 RD$
+Imported Beer (0.33 Liter Bottle),300.00 RD$,150.00 RD$,450.00 RD$
+Cappuccino (Regular Size),148.17 RD$,50.00 RD$,210.00 RD$
+"Soft Drink (Coca-Cola or Pepsi, 0.33 Liter Bottle)",68.89 RD$,40.00 RD$,109.00 RD$
+Bottled Water (0.33 Liter),37.14 RD$,25.00 RD$,60.00 RD$
+Markets,,,
+"Milk (Regular, 1 Liter)",85.70 RD$,70.00 RD$,97.00 RD$
+Fresh White Bread (500 g Loaf),94.61 RD$,40.00 RD$,130.00 RD$
+White Rice (1 kg),98.26 RD$,80.00 RD$,110.23 RD$
+"Eggs (12, Large Size)",139.00 RD$,72.00 RD$,240.00 RD$
+Local Cheese (1 kg),477.24 RD$,350.00 RD$,705.48 RD$
+Chicken Fillets (1 kg),336.96 RD$,190.00 RD$,416.67 RD$
+Beef Round or Equivalent Back Leg Red Meat (1 kg),420.23 RD$,250.00 RD$,496.04 RD$
+Apples (1 kg),194.84 RD$,154.32 RD$,220.46 RD$
+Bananas (1 kg),52.30 RD$,40.00 RD$,100.00 RD$
+Oranges (1 kg),176.81 RD$,35.00 RD$,396.83 RD$
+Tomatoes (1 kg),114.71 RD$,90.39 RD$,132.28 RD$
+Potatoes (1 kg),131.32 RD$,66.14 RD$,198.42 RD$
+Onions (1 kg),137.29 RD$,110.23 RD$,154.32 RD$
+Lettuce (1 Head),71.28 RD$,39.00 RD$,120.00 RD$
+Bottled Water (1.5 Liter),58.89 RD$,30.00 RD$,85.00 RD$
+Bottle of Wine (Mid-Range),687.00 RD$,400.00 RD$,"1,100.00 RD$"
+Domestic Beer (0.5 Liter Bottle),155.77 RD$,142.86 RD$,200.00 RD$
+Imported Beer (0.33 Liter Bottle),193.74 RD$,125.00 RD$,275.00 RD$
+"Cigarettes (Pack of 20, Marlboro)",330.00 RD$,312.00 RD$,350.00 RD$
+Transportation,,,
+One-Way Ticket (Local Transport),35.00 RD$,35.00 RD$,50.00 RD$
+Monthly Public Transport Pass (Regular Price),"1,200.00 RD$",900.00 RD$,"1,200.00 RD$"
+Taxi Start (Standard Tariff),200.00 RD$,150.00 RD$,350.00 RD$
+Taxi 1 km (Standard Tariff),135.00 RD$,120.00 RD$,135.00 RD$
+Taxi 1 Hour Waiting (Standard Tariff),350.00 RD$,350.00 RD$,350.00 RD$
+Gasoline (1 Liter),76.48 RD$,73.44 RD$,79.25 RD$
+Volkswagen Golf 1.5 (or Equivalent New Compact Car),"1,400,000.00 RD$","1,200,000.00 RD$","1,400,000.00 RD$"
+Toyota Corolla Sedan 1.6 (or Equivalent New Mid-Size Car),"2,058,364.86 RD$","2,034,000.00 RD$","2,100,000.00 RD$"
+Utilities (Monthly),,,
+"Basic Utilities for 85 m2 Apartment (Electricity, Heating, Cooling, Water, Garbage)","6,249.72 RD$","3,500.00 RD$","10,000.00 RD$"
+"Mobile Phone Plan (Monthly, with Calls and 10GB+ Data)","2,317.78 RD$",800.00 RD$,"5,000.00 RD$"
+"Broadband Internet (Unlimited Data, 60 Mbps or Higher)","2,256.00 RD$","1,500.00 RD$","3,100.00 RD$"
+Sports And Leisure,,,
+Monthly Fitness Club Membership,"2,155.56 RD$","1,100.00 RD$","5,000.00 RD$"
+"Tennis Court Rental (1 Hour, Weekend)","1,462.50 RD$",850.00 RD$,"1,500.00 RD$"
+Cinema Ticket (International Release),425.00 RD$,320.00 RD$,500.00 RD$
+Childcare,,,
+"Private Full-Day Preschool or Kindergarten, Monthly Fee per Child","15,666.67 RD$","12,000.00 RD$","20,000.00 RD$"
+"International Primary School, Annual Tuition per Child","434,500.00 RD$","250,000.00 RD$","600,000.00 RD$"
+Clothing And Shoes,,,
+Jeans (Levi's 501 or Similar),"3,513.61 RD$","1,400.00 RD$","5,995.00 RD$"
+Summer Dress in a Chain Store (e.g. Zara or H&M),"2,866.67 RD$","2,500.00 RD$","3,000.00 RD$"
+Nike Running Shoes (Mid-Range),"5,249.38 RD$","3,000.00 RD$","7,495.00 RD$"
+Men's Leather Business Shoes,"7,499.17 RD$","5,000.00 RD$","10,000.00 RD$"
+Rent Per Month,,,
+1 Bedroom Apartment in City Centre,"47,146.84 RD$","30,000.00 RD$","96,000.00 RD$"
+1 Bedroom Apartment Outside of City Centre,"23,190.55 RD$","12,000.00 RD$","51,000.00 RD$"
+3 Bedroom Apartment in City Centre,"91,369.85 RD$","50,000.00 RD$","160,000.00 RD$"
+3 Bedroom Apartment Outside of City Centre,"39,332.56 RD$","26,500.00 RD$","90,000.00 RD$"
+Buy Apartment Price,,,
+Price per Square Meter to Buy Apartment in City Centre,"135,380.62 RD$","100,000.00 RD$","172,119.90 RD$"
+Price per Square Meter to Buy Apartment Outside of Centre,"73,141.74 RD$","60,000.00 RD$","90,000.00 RD$"
+Salaries And Financing,,,
+Average Monthly Net Salary (After Tax),"37,655.20 RD$",,
+Annual Mortgage Interest Rate (20-Year Fixed),13.91 RD$,10.00 RD$,16.00 RD$
+Common Household Ingredients,,,
+Habichuelas Rojas / Red Beans (1 kg),90.00 RD$,70.00 RD$,120.00 RD$
+Habichuelas Negras / Black Beans (1 kg),95.00 RD$,75.00 RD$,125.00 RD$
+Habichuelas Pintas / Pinto Beans (1 kg),85.00 RD$,65.00 RD$,110.00 RD$
+Guandules Secos / Dried Pigeon Peas (500 g),65.00 RD$,50.00 RD$,85.00 RD$
+Guandules Verdes Enlatados / Canned Green Pigeon Peas (425 g),75.00 RD$,60.00 RD$,95.00 RD$
+Arroz Integral / Brown Rice (1 kg),110.00 RD$,90.00 RD$,140.00 RD$
+Plátanos Verdes / Green Plantains (1 kg),40.00 RD$,25.00 RD$,60.00 RD$
+Plátanos Maduros / Ripe Plantains (1 kg),45.00 RD$,30.00 RD$,65.00 RD$
+Yuca / Cassava (1 kg),35.00 RD$,25.00 RD$,55.00 RD$
+Ñame / Yam (1 kg),50.00 RD$,35.00 RD$,70.00 RD$
+Batata / Sweet Potato (1 kg),45.00 RD$,30.00 RD$,65.00 RD$
+Auyama / Calabaza Squash (1 kg),40.00 RD$,25.00 RD$,60.00 RD$
+Tayota / Chayote (1 kg),35.00 RD$,20.00 RD$,55.00 RD$
+Zanahoria / Carrots (1 kg),70.00 RD$,50.00 RD$,95.00 RD$
+Repollo / Cabbage (1 Head),50.00 RD$,35.00 RD$,75.00 RD$
+Pepino / Cucumber (1 kg),55.00 RD$,35.00 RD$,80.00 RD$
+Remolacha / Beet (1 kg),65.00 RD$,45.00 RD$,90.00 RD$
+Espinaca / Spinach (Bunch),40.00 RD$,25.00 RD$,60.00 RD$
+Berro / Watercress (Bunch),30.00 RD$,20.00 RD$,50.00 RD$
+Vainitas / Green Beans (1 kg),85.00 RD$,60.00 RD$,110.00 RD$
+Molondrones / Okra (1 kg),75.00 RD$,50.00 RD$,100.00 RD$
+Berenjena / Eggplant (1 kg),60.00 RD$,40.00 RD$,85.00 RD$
+Ají Cubanela / Cubanelle Pepper (1 kg),80.00 RD$,55.00 RD$,110.00 RD$
+Ají Morón / Bell Pepper (1 kg),120.00 RD$,85.00 RD$,160.00 RD$
+Ají Gustoso / Seasoning Pepper (100 g),25.00 RD$,15.00 RD$,40.00 RD$
+Cilantro Ancho / Culantro (Bunch),20.00 RD$,10.00 RD$,35.00 RD$
+Cilantro / Cilantro (Bunch),25.00 RD$,15.00 RD$,40.00 RD$
+Perejil / Parsley (Bunch),20.00 RD$,10.00 RD$,35.00 RD$
+Cebollín / Scallion (Bunch),25.00 RD$,15.00 RD$,40.00 RD$
+Cebolla Roja / Red Onion (1 kg),145.00 RD$,110.00 RD$,175.00 RD$
+Ajo / Garlic (Head),15.00 RD$,10.00 RD$,25.00 RD$
+Jengibre / Ginger (100 g),20.00 RD$,12.00 RD$,30.00 RD$
+Maíz / Corn on the Cob (Each),20.00 RD$,10.00 RD$,30.00 RD$
+Aguacate / Avocado (Each),50.00 RD$,25.00 RD$,80.00 RD$
+Limón Agrio / Sour Lime (1 kg),60.00 RD$,40.00 RD$,90.00 RD$
+Lechosa / Papaya (1 kg),45.00 RD$,30.00 RD$,70.00 RD$
+Piña / Pineapple (Each),80.00 RD$,50.00 RD$,120.00 RD$
+Mango (1 kg),50.00 RD$,30.00 RD$,80.00 RD$
+Guayaba / Guava (1 kg),60.00 RD$,40.00 RD$,90.00 RD$
+Chinola / Passion Fruit (1 kg),90.00 RD$,60.00 RD$,130.00 RD$
+Coco / Coconut (Each),40.00 RD$,25.00 RD$,60.00 RD$
+Cereza Tropical / West Indian Cherry (1 kg),70.00 RD$,45.00 RD$,100.00 RD$
+Cerdo / Pork Loin (1 kg),280.00 RD$,200.00 RD$,380.00 RD$
+Chuleta de Cerdo / Pork Chops (1 kg),300.00 RD$,220.00 RD$,400.00 RD$
+Pollo Entero / Whole Chicken (1 kg),200.00 RD$,160.00 RD$,260.00 RD$
+Muslo de Pollo / Chicken Thighs (1 kg),185.00 RD$,140.00 RD$,240.00 RD$
+Salami Dominicano (500 g),120.00 RD$,85.00 RD$,160.00 RD$
+Longaniza Dominicana (1 kg),250.00 RD$,180.00 RD$,340.00 RD$
+Pescado Fresco / Fresh Fish (1 kg),350.00 RD$,250.00 RD$,500.00 RD$
+Camarones / Shrimp (1 kg),550.00 RD$,400.00 RD$,750.00 RD$
+Sardinas en Lata / Canned Sardines (125 g),55.00 RD$,40.00 RD$,75.00 RD$
+Atún en Lata / Canned Tuna (170 g),90.00 RD$,65.00 RD$,120.00 RD$
+Queso de Hoja / Leaf Cheese (1 kg),400.00 RD$,300.00 RD$,550.00 RD$
+Queso de Freír / Frying Cheese (1 kg),450.00 RD$,350.00 RD$,600.00 RD$
+Mantequilla / Butter (250 g),120.00 RD$,90.00 RD$,160.00 RD$
+Crema de Leche / Heavy Cream (500 ml),130.00 RD$,95.00 RD$,175.00 RD$
+Yogur / Yogurt (500 ml),95.00 RD$,70.00 RD$,130.00 RD$
+Leche Evaporada / Evaporated Milk (400 ml),85.00 RD$,65.00 RD$,110.00 RD$
+Leche Condensada / Condensed Milk (400 ml),100.00 RD$,75.00 RD$,130.00 RD$
+Aceite de Soya / Soybean Oil (1 Liter),130.00 RD$,95.00 RD$,170.00 RD$
+Aceite de Maíz / Corn Oil (1 Liter),155.00 RD$,120.00 RD$,200.00 RD$
+Aceite de Oliva / Olive Oil (500 ml),350.00 RD$,250.00 RD$,500.00 RD$
+Vinagre / Vinegar (500 ml),55.00 RD$,35.00 RD$,80.00 RD$
+Salsa de Tomate / Tomato Sauce (400 g),65.00 RD$,45.00 RD$,90.00 RD$
+Pasta de Tomate / Tomato Paste (200 g),50.00 RD$,35.00 RD$,70.00 RD$
+Azúcar Blanca / White Sugar (1 kg),65.00 RD$,50.00 RD$,85.00 RD$
+Azúcar Morena / Brown Sugar (1 kg),70.00 RD$,55.00 RD$,90.00 RD$
+Sal / Salt (1 kg),30.00 RD$,20.00 RD$,45.00 RD$
+Pimienta Negra / Black Pepper (50 g),60.00 RD$,40.00 RD$,85.00 RD$
+Orégano Seco / Dried Oregano (50 g),45.00 RD$,30.00 RD$,65.00 RD$
+Sazón Completo / Complete Seasoning (250 g),85.00 RD$,60.00 RD$,115.00 RD$
+Cubitos de Pollo / Chicken Bouillon (12 Pack),50.00 RD$,35.00 RD$,70.00 RD$
+Achiote / Annatto Seeds (100 g),40.00 RD$,25.00 RD$,60.00 RD$
+Sofrito Dominicano (250 g),75.00 RD$,50.00 RD$,100.00 RD$
+Harina de Trigo / Wheat Flour (1 kg),55.00 RD$,40.00 RD$,75.00 RD$
+Harina de Maíz / Cornmeal (1 kg),60.00 RD$,45.00 RD$,80.00 RD$
+Avena / Oats (500 g),70.00 RD$,50.00 RD$,95.00 RD$
+Espaguetis / Spaghetti (500 g),60.00 RD$,40.00 RD$,85.00 RD$
+Coditos / Macaroni (500 g),55.00 RD$,38.00 RD$,80.00 RD$
+Pan de Agua / Dominican Water Bread (Unit),10.00 RD$,5.00 RD$,15.00 RD$
+Galletas de Soda / Soda Crackers (250 g),55.00 RD$,40.00 RD$,75.00 RD$
+Café Molido Santo Domingo / Ground Coffee (250 g),180.00 RD$,140.00 RD$,240.00 RD$
+Chocolate de Barra / Chocolate Bar for Hot Cocoa (250 g),90.00 RD$,65.00 RD$,120.00 RD$
+Canela en Rama / Cinnamon Sticks (50 g),45.00 RD$,30.00 RD$,65.00 RD$
+Clavos Dulces / Cloves (50 g),50.00 RD$,35.00 RD$,70.00 RD$
+Nuez Moscada / Nutmeg (50 g),55.00 RD$,40.00 RD$,75.00 RD$
+Té / Tea Bags (25 Pack),85.00 RD$,60.00 RD$,120.00 RD$
+Jugo de Naranja / Orange Juice (1 Liter),110.00 RD$,80.00 RD$,150.00 RD$
+Salsa Picante / Hot Sauce (150 ml),65.00 RD$,40.00 RD$,95.00 RD$
+Mostaza / Mustard (250 g),70.00 RD$,50.00 RD$,100.00 RD$
+Mayonesa / Mayonnaise (250 g),85.00 RD$,60.00 RD$,115.00 RD$
+Ketchup (400 g),95.00 RD$,70.00 RD$,130.00 RD$
+Salsa de Soya / Soy Sauce (250 ml),80.00 RD$,55.00 RD$,110.00 RD$
+Aceitunas / Olives (200 g),95.00 RD$,70.00 RD$,130.00 RD$
+Alcaparras / Capers (100 g),85.00 RD$,60.00 RD$,115.00 RD$
+Pasas / Raisins (200 g),90.00 RD$,65.00 RD$,120.00 RD$
+Maní / Peanuts (250 g),70.00 RD$,50.00 RD$,95.00 RD$
+Coco Rallado / Shredded Coconut (200 g),65.00 RD$,45.00 RD$,90.00 RD$
+Leche de Coco / Coconut Milk (400 ml),110.00 RD$,80.00 RD$,145.00 RD$
