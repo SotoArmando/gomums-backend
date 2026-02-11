@@ -216,6 +216,22 @@ SECTION_TEMPLATES = {
         }
     },
     
+    # Recipes with Steps
+    "recipes_with_steps": {
+        "type": "recipes",
+        "title": "Step-by-Step Recipes",
+        "subtitle": "Learn with detailed instructions",
+        "order_index": 9,
+        "data": {
+            "filter": "with_steps",
+            "show_phases": True,
+            "show_prep_time": True,
+            "show_difficulty": True,
+            "limit": 10,
+            "layout": "grid"
+        }
+    },
+    
     # Leaderboard Section
     "leaderboard": {
         "type": "leaderboard",

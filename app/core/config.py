@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     # Server
     PORT: int = 8000
     ENVIRONMENT: str = "development"
-    CORS_ORIGINS: str = '["http://localhost:5173"]'
+    CORS_ORIGINS: str = '["http://localhost:5173", "https://gomums.netlify.app"]'
     
     # Google OAuth (optional)
     GOOGLE_CLIENT_ID: str = ""
@@ -37,7 +37,7 @@ class Settings(BaseSettings):
         try:
             return json.loads(self.CORS_ORIGINS)
         except json.JSONDecodeError:
-            return ["http://localhost:5173"]
+            return ["http://localhost:5173", "https://gomums.netlify.app"]
     
     @property
     def database_url(self) -> str:

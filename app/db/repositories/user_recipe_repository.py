@@ -59,6 +59,7 @@ class UserRecipeRepository:
             "difficulty": row.get("difficulty"),
             "category": row.get("category"),
             "is_favorite": row.get("is_favorite", False),
+            "original_recipe_id": str(row["original_recipe_id"]) if row.get("original_recipe_id") else None,
             "created_at": row["created_at"],
         }
     
@@ -96,7 +97,7 @@ class UserRecipeRepository:
         query = """
             SELECT 
                 id, name, image, prep_time, difficulty, 
-                category, is_favorite, created_at
+                category, is_favorite, original_recipe_id, created_at
             FROM user_recipes
             WHERE user_id = %s
         """
@@ -132,7 +133,7 @@ class UserRecipeRepository:
         try:
             with db.get_cursor() as cursor:
                 cursor.execute(count_query, params)
-                total = cursor.fetchone()[0]
+                total = cursor.fetchone()['count']
         except Exception as e:
             print(f"Error counting user recipes: {e}")
             total = 0
@@ -145,13 +146,10 @@ class UserRecipeRepository:
         try:
             with db.get_cursor() as cursor:
                 cursor.execute(query, params_with_pagination)
-                columns = [desc[0] for desc in cursor.description]
                 rows = cursor.fetchall()
                 
                 recipes = [
-                    UserRecipeRepository._format_recipe_summary(
-                        UserRecipeRepository._row_to_dict(row, columns)
-                    )
+                    UserRecipeRepository._format_recipe_summary(dict(row))
                     for row in rows
                 ]
                 
@@ -171,8 +169,100 @@ class UserRecipeRepository:
             }
     
     @staticmethod
+    def get_user_recipes_by_week(
+        user_id: str,
+        week_start: str  # ISO date string (YYYY-MM-DD) - should be a Monday
+    ) -> Dict[str, Any]:
+        """
+        Get user's private recipes grouped by the week they were created.
+        
+        Args:
+            user_id: The user's ID
+            week_start: Start of the week (Monday) in YYYY-MM-DD format
+        
+        Returns:
+            Dict with week info and recipes grouped by day
+        """
+        # Calculate week end (Sunday)
+        query = """
+            WITH week_bounds AS (
+                SELECT 
+                    %s::date AS week_start,
+                    (%s::date + INTERVAL '6 days')::date AS week_end
+            )
+            SELECT 
+                id, name, image, prep_time, difficulty, 
+                category, is_favorite, original_recipe_id, created_at,
+                EXTRACT(DOW FROM created_at) AS day_of_week,
+                TO_CHAR(created_at, 'Day') AS day_name
+            FROM user_recipes, week_bounds
+            WHERE user_id = %s
+              AND created_at >= week_bounds.week_start
+              AND created_at < (week_bounds.week_end + INTERVAL '1 day')
+            ORDER BY created_at ASC
+        """
+        
+        try:
+            with db.get_cursor() as cursor:
+                cursor.execute(query, (week_start, week_start, user_id))
+                rows = cursor.fetchall()
+                
+                # Group by day (0=Sunday, 1=Monday, ..., 6=Saturday in PostgreSQL)
+                # We'll convert to Monday=0 format for consistency
+                days = {
+                    "monday": [],
+                    "tuesday": [],
+                    "wednesday": [],
+                    "thursday": [],
+                    "friday": [],
+                    "saturday": [],
+                    "sunday": []
+                }
+                
+                day_mapping = {
+                    1: "monday",
+                    2: "tuesday", 
+                    3: "wednesday",
+                    4: "thursday",
+                    5: "friday",
+                    6: "saturday",
+                    0: "sunday"
+                }
+                
+                for row in rows:
+                    day_num = int(row['day_of_week'])
+                    day_name = day_mapping.get(day_num, "monday")
+                    recipe_summary = UserRecipeRepository._format_recipe_summary(dict(row))
+                    days[day_name].append(recipe_summary)
+                
+                # Calculate week end
+                from datetime import datetime, timedelta
+                start = datetime.strptime(week_start, "%Y-%m-%d").date()
+                end = start + timedelta(days=6)
+                
+                return {
+                    "week_start": week_start,
+                    "week_end": end.isoformat(),
+                    "total_recipes": len(rows),
+                    "recipes_by_day": days
+                }
+                
+        except Exception as e:
+            print(f"Error fetching user recipes by week: {e}")
+            return {
+                "week_start": week_start,
+                "week_end": None,
+                "total_recipes": 0,
+                "recipes_by_day": {
+                    "monday": [], "tuesday": [], "wednesday": [],
+                    "thursday": [], "friday": [], "saturday": [], "sunday": []
+                }
+            }
+    
+    @staticmethod
     def get_user_recipe_by_id(user_id: str, recipe_id: str) -> Optional[Dict[str, Any]]:
         """Get a single user recipe by ID (only if owned by user)"""
+        print(f"[DEBUG] get_user_recipe_by_id called with user_id={user_id}, recipe_id={recipe_id}")
         query = """
             SELECT 
                 id, user_id, name, description, image, 
@@ -184,27 +274,32 @@ class UserRecipeRepository:
                 notes, is_favorite,
                 created_at, updated_at
             FROM user_recipes
-            WHERE id = %s AND user_id = %s
+            WHERE id = %s::uuid AND user_id = %s::uuid
         """
         
         try:
             with db.get_cursor() as cursor:
                 cursor.execute(query, (recipe_id, user_id))
                 row = cursor.fetchone()
+                print(f"[DEBUG] get_user_recipe_by_id row={row}")
                 
                 if not row:
                     return None
                 
-                columns = [desc[0] for desc in cursor.description]
-                recipe_dict = UserRecipeRepository._row_to_dict(row, columns)
-                return UserRecipeRepository._format_recipe(recipe_dict)
+                # row is already a dict from RealDictCursor
+                return UserRecipeRepository._format_recipe(dict(row))
         except Exception as e:
             print(f"Error fetching user recipe: {e}")
+            import traceback
+            print(f"Traceback: {traceback.format_exc()}")
             return None
     
     @staticmethod
     def create_user_recipe(user_id: str, recipe_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         """Create a new user recipe"""
+        print(f"[DEBUG] create_user_recipe called with user_id={user_id}")
+        print(f"[DEBUG] recipe_data keys: {recipe_data.keys()}")
+        
         query = """
             INSERT INTO user_recipes (
                 user_id, name, description, image,
@@ -256,17 +351,26 @@ class UserRecipeRepository:
             recipe_data.get("is_favorite", False)
         )
         
+        print(f"[DEBUG] About to insert user recipe...")
         try:
+            new_recipe_id = None
             with db.get_cursor(commit=True) as cursor:
                 cursor.execute(query, params)
                 result = cursor.fetchone()
+                print(f"[DEBUG] Insert result: {result}")
                 
                 if result:
-                    # Return the full recipe
-                    return UserRecipeRepository.get_user_recipe_by_id(user_id, str(result[0]))
-                return None
+                    new_recipe_id = str(result['id'])
+            
+            # Fetch the full recipe AFTER the commit (outside the with block)
+            if new_recipe_id:
+                return UserRecipeRepository.get_user_recipe_by_id(user_id, new_recipe_id)
+            print("[DEBUG] No result from insert")
+            return None
         except Exception as e:
+            import traceback
             print(f"Error creating user recipe: {e}")
+            print(f"Traceback: {traceback.format_exc()}")
             return None
     
     @staticmethod
@@ -331,13 +435,17 @@ class UserRecipeRepository:
         params.extend([recipe_id, user_id])
         
         try:
+            updated = False
             with db.get_cursor(commit=True) as cursor:
                 cursor.execute(query, params)
                 result = cursor.fetchone()
-                
                 if result:
-                    return UserRecipeRepository.get_user_recipe_by_id(user_id, recipe_id)
-                return None
+                    updated = True
+            
+            # Fetch after commit
+            if updated:
+                return UserRecipeRepository.get_user_recipe_by_id(user_id, recipe_id)
+            return None
         except Exception as e:
             print(f"Error updating user recipe: {e}")
             return None
@@ -377,8 +485,8 @@ class UserRecipeRepository:
                 
                 if result:
                     return {
-                        "id": str(result[0]),
-                        "is_favorite": result[1]
+                        "id": str(result['id']),
+                        "is_favorite": result['is_favorite']
                     }
                 return None
         except Exception as e:
@@ -391,7 +499,7 @@ class UserRecipeRepository:
         query = """
             SELECT 
                 id, name, image, prep_time, difficulty, 
-                category, is_favorite, created_at
+                category, is_favorite, original_recipe_id, created_at
             FROM user_recipes
             WHERE user_id = %s AND is_favorite = TRUE
             ORDER BY updated_at DESC
@@ -401,13 +509,10 @@ class UserRecipeRepository:
         try:
             with db.get_cursor() as cursor:
                 cursor.execute(query, (user_id, limit))
-                columns = [desc[0] for desc in cursor.description]
                 rows = cursor.fetchall()
                 
                 return [
-                    UserRecipeRepository._format_recipe_summary(
-                        UserRecipeRepository._row_to_dict(row, columns)
-                    )
+                    UserRecipeRepository._format_recipe_summary(dict(row))
                     for row in rows
                 ]
         except Exception as e:
@@ -422,7 +527,7 @@ class UserRecipeRepository:
         try:
             with db.get_cursor() as cursor:
                 cursor.execute(query, (user_id,))
-                return cursor.fetchone()[0]
+                return cursor.fetchone()['count']
         except Exception as e:
             print(f"Error counting recipes: {e}")
             return 0
@@ -440,7 +545,7 @@ class UserRecipeRepository:
         try:
             with db.get_cursor() as cursor:
                 cursor.execute(query, (user_id,))
-                return [row[0] for row in cursor.fetchall()]
+                return [row['category'] for row in cursor.fetchall()]
         except Exception as e:
             print(f"Error fetching categories: {e}")
             return []
@@ -451,6 +556,8 @@ class UserRecipeRepository:
         Copy a public recipe to user's private recipes
         This allows users to save and modify public recipes
         """
+        print(f"[DEBUG] copy_from_public_recipe called with user_id={user_id}, recipe_id={recipe_id}")
+        
         # First, get the public recipe
         query = """
             SELECT 
@@ -459,19 +566,23 @@ class UserRecipeRepository:
                 calories, protein, carbs, fat, fiber,
                 category, tags
             FROM recipes
-            WHERE id = %s
+            WHERE id = %s::uuid
         """
         
         try:
+            print(f"[DEBUG] About to execute query...")
             with db.get_cursor() as cursor:
                 cursor.execute(query, (recipe_id,))
                 row = cursor.fetchone()
+                print(f"[DEBUG] Query executed, row={row}")
                 
                 if not row:
+                    print(f"[DEBUG] No recipe found with ID: {recipe_id}")
                     return None
                 
-                columns = [desc[0] for desc in cursor.description]
-                public_recipe = dict(zip(columns, row))
+                # row is already a dict from RealDictCursor
+                public_recipe = dict(row)
+                print(f"[DEBUG] Found recipe: {public_recipe.get('name')}")
             
             # Convert ingredients and instructions to expected format
             # Public recipes store these as text arrays
@@ -525,8 +636,13 @@ class UserRecipeRepository:
                 "notes": "Copied from public recipes"
             }
             
-            return UserRecipeRepository.create_user_recipe(user_id, recipe_data)
+            print(f"[DEBUG] About to call create_user_recipe with recipe_data")
+            result = UserRecipeRepository.create_user_recipe(user_id, recipe_data)
+            print(f"[DEBUG] create_user_recipe returned: {result is not None}")
+            return result
             
         except Exception as e:
+            import traceback
             print(f"Error copying public recipe: {e}")
+            print(f"Traceback: {traceback.format_exc()}")
             return None

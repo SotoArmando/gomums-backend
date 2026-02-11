@@ -4,8 +4,10 @@ Run all test files for the 22 completed features
 """
 import subprocess
 import sys
+import os
 from datetime import datetime
 from time import time
+from pathlib import Path
 
 from rich.console import Console
 from rich.table import Table
@@ -21,6 +23,9 @@ from rich.layout import Layout
 
 # Initialize Rich console
 console = Console()
+
+# Get the directory where this script is located
+SCRIPT_DIR = Path(__file__).parent.resolve()
 
 # Test files to run
 TEST_FILES = [
@@ -39,9 +44,12 @@ def run_test(filename, description):
     
     start_time = time()
     
+    # Get full path to test file
+    test_file_path = SCRIPT_DIR / filename
+    
     try:
         result = subprocess.run(
-            ["python3", filename],
+            ["python3", str(test_file_path)],
             capture_output=True,
             text=True,
             timeout=60
@@ -134,8 +142,9 @@ def main():
     # Setup test users first
     console.print("\n[bold yellow]⚙️  Setting up test users...[/bold yellow]")
     try:
+        setup_script = SCRIPT_DIR / "setup_test_users.py"
         setup_result = subprocess.run(
-            ["python3", "setup_test_users.py"],
+            ["python3", str(setup_script)],
             capture_output=True,
             text=True,
             timeout=30

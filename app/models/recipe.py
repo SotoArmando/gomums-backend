@@ -32,7 +32,7 @@ class NutritionInfo(BaseModel):
 class RecipeStep(BaseModel):
     """Single step in a recipe, categorized by phase"""
     order: int                                          # Step number (1-based)
-    phase: str = Field(..., pattern="^(prep|cooking|serve)$")  # Phase of the recipe
+    phase: str = Field(..., pattern="^(prep|cooking|serve)$")  # Phase: prep, cooking, or serve
     text: str                                           # Instruction text
     items: List[str] = Field(default_factory=list)      # Ingredients/tools used in this step
     time_minutes: Optional[int] = None                  # Estimated time for this step
@@ -43,6 +43,7 @@ class RecipeResponse(BaseModel):
     """Recipe response model"""
     id: str
     name: str
+    description: Optional[str] = None
     image: Optional[str] = None
     prep_time: Optional[str] = None
     servings: Optional[int] = None

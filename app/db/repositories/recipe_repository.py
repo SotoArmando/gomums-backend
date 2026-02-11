@@ -35,7 +35,7 @@ class RecipeRepository:
         """
         query = """
             SELECT 
-                id, name, image, prep_time, servings, difficulty,
+                id, name, description, image, prep_time, servings, difficulty,
                 ingredients, instructions, steps,
                 structured_ingredients,
                 calories, protein, carbs, fat, fiber,
@@ -85,6 +85,7 @@ class RecipeRepository:
                     recipes.append({
                         'id': str(row['id']),
                         'name': row['name'],
+                        'description': row['description'],
                         'image': row['image'],
                         'prep_time': row['prep_time'],
                         'servings': row['servings'],
@@ -122,7 +123,7 @@ class RecipeRepository:
         """
         query = """
             SELECT 
-                id, name, image, prep_time, servings, difficulty,
+                id, name, description, image, prep_time, servings, difficulty,
                 ingredients, instructions, steps,
                 structured_ingredients,
                 calories, protein, carbs, fat, fiber,
@@ -143,6 +144,7 @@ class RecipeRepository:
                 return {
                     'id': str(row['id']),
                     'name': row['name'],
+                    'description': row['description'],
                     'image': row['image'],
                     'prep_time': row['prep_time'],
                     'servings': row['servings'],
@@ -212,6 +214,73 @@ class RecipeRepository:
             print(f"Error counting recipes: {e}")
             return 0
     
+    async def get_recipes_with_steps(
+        self,
+        limit: int = 10,
+        offset: int = 0
+    ) -> List[Dict[str, Any]]:
+        """
+        Get recipes that have structured steps populated
+        
+        Args:
+            limit: Maximum number of results
+            offset: Number of results to skip
+        
+        Returns:
+            List of recipe dictionaries with steps
+        """
+        query = """
+            SELECT 
+                id, name, description, image, prep_time, servings, difficulty,
+                ingredients, instructions, steps,
+                structured_ingredients,
+                calories, protein, carbs, fat, fiber,
+                featured, category, tags,
+                created_at, updated_at
+            FROM recipes
+            WHERE steps IS NOT NULL 
+                AND steps != '[]'::jsonb
+                AND jsonb_array_length(steps) > 0
+            ORDER BY featured DESC, created_at DESC
+            LIMIT %s OFFSET %s
+        """
+        
+        try:
+            with db.get_cursor() as cursor:
+                cursor.execute(query, [limit, offset])
+                rows = cursor.fetchall()
+                
+                recipes = []
+                for row in rows:
+                    recipes.append({
+                        'id': str(row['id']),
+                        'name': row['name'],
+                        'description': row['description'],
+                        'image': row['image'],
+                        'prep_time': row['prep_time'],
+                        'servings': row['servings'],
+                        'difficulty': row['difficulty'],
+                        'ingredients': row['ingredients'] if row['ingredients'] else [],
+                        'instructions': row['instructions'] if row['instructions'] else [],
+                        'steps': row['steps'] if row['steps'] else [],
+                        'structured_ingredients': row.get('structured_ingredients') or [],
+                        'calories': row['calories'],
+                        'protein': row['protein'],
+                        'carbs': row['carbs'],
+                        'fat': row['fat'],
+                        'fiber': row['fiber'],
+                        'featured': row['featured'],
+                        'category': row['category'],
+                        'tags': row['tags'] if row['tags'] else [],
+                        'created_at': row['created_at'],
+                        'updated_at': row['updated_at']
+                    })
+                
+                return recipes
+        except Exception as e:
+            print(f"Error getting recipes with steps: {e}")
+            return []
+    
     @staticmethod
     def create_recipe(recipe_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         """
@@ -277,6 +346,7 @@ class RecipeRepository:
                 return {
                     'id': str(row['id']),
                     'name': row['name'],
+                    'description': row.get('description'),
                     'image': row['image'],
                     'prep_time': row['prep_time'],
                     'servings': row['servings'],

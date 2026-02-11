@@ -97,6 +97,105 @@ def root():
     }
 
 
+def get_response_schema(route) -> dict:
+    """Extract response schema from route's response model"""
+    response_info = {}
+    
+    # Get response model if defined
+    if hasattr(route, "response_model") and route.response_model:
+        model = route.response_model
+        model_name = getattr(model, "__name__", str(model))
+        response_info["response_model"] = model_name
+        
+        # Try to get the schema from pydantic model
+        if hasattr(model, "model_json_schema"):
+            try:
+                schema = model.model_json_schema()
+                response_info["response_schema"] = schema
+            except Exception:
+                pass
+        elif hasattr(model, "schema"):
+            try:
+                schema = model.schema()
+                response_info["response_schema"] = schema
+            except Exception:
+                pass
+    
+    # Get responses defined in the route
+    if hasattr(route, "responses") and route.responses:
+        response_info["responses"] = route.responses
+    
+    return response_info
+
+
+def get_request_body_schema(route) -> dict:
+    """Extract request body schema from route"""
+    request_info = {}
+    
+    if hasattr(route, "body_field") and route.body_field:
+        body = route.body_field
+        if hasattr(body, "type_") and body.type_:
+            model = body.type_
+            model_name = getattr(model, "__name__", str(model))
+            request_info["request_model"] = model_name
+            
+            if hasattr(model, "model_json_schema"):
+                try:
+                    schema = model.model_json_schema()
+                    request_info["request_schema"] = schema
+                except Exception:
+                    pass
+    
+    return request_info
+
+
+@app.get("/api/routes", tags=["Meta"])
+def list_routes(include_schemas: bool = False):
+    """
+    List all available API routes - useful for AI agents to discover endpoints
+    
+    Returns a structured list of all routes with their methods, paths, and descriptions.
+    
+    - **include_schemas**: If true, includes full request/response JSON schemas (larger response)
+    """
+    routes = []
+    for route in app.routes:
+        if hasattr(route, "methods") and hasattr(route, "path"):
+            route_info = {
+                "path": route.path,
+                "methods": list(route.methods),
+                "name": route.name,
+                "description": route.description if hasattr(route, "description") else None,
+                "tags": route.tags if hasattr(route, "tags") else []
+            }
+            
+            # Add response model name (always include)
+            if hasattr(route, "response_model") and route.response_model:
+                model = route.response_model
+                route_info["response_model"] = getattr(model, "__name__", str(model))
+            
+            # Add full schemas if requested
+            if include_schemas:
+                response_schema = get_response_schema(route)
+                if response_schema:
+                    route_info.update(response_schema)
+                
+                request_schema = get_request_body_schema(route)
+                if request_schema:
+                    route_info.update(request_schema)
+            
+            routes.append(route_info)
+    
+    return {
+        "service": "GoMums API",
+        "version": "1.0.0",
+        "total_routes": len(routes),
+        "openapi_schema": f"http://localhost:{settings.PORT}/openapi.json",
+        "interactive_docs": f"http://localhost:{settings.PORT}/docs",
+        "routes": sorted(routes, key=lambda x: x["path"])
+    }
+
+
 # ==================== Include Routers ====================
 
 # Authentication routes

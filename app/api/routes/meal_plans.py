@@ -118,6 +118,66 @@ def quick_create_meal_plan(
     return meal_plan
 
 
+@router.post("/add-to-date", response_model=PlannedMealResponse, status_code=status.HTTP_201_CREATED)
+def add_meal_to_date(
+    meal_data: PlannedMealCreate,
+    current_user_id: str = Depends(get_current_user_id)
+):
+    """
+    Add a planned meal to a specific date (auto-creates weekly meal plan if needed)
+    
+    This is a convenience endpoint for the Calendar Strip + Today's Plan workflow.
+    Just provide the date and meal details - the system will automatically:
+    1. Find or create the meal plan for that week
+    2. Add the recipe to the specified date
+    
+    Request body:
+    - date: Date from the calendar strip (YYYY-MM-DD)
+    - meal_type: Type (breakfast, lunch, dinner, snack)
+    - recipe_name: Name of the recipe/meal
+    - recipe_id: Optional recipe ID if using existing recipe
+    - servings: Number of servings (default: 1)
+    - is_batch: Is this batch cooking? (default: false)
+    - is_leftovers: Is this using leftovers? (default: false)
+    
+    Returns:
+    - Created planned meal bound to the selected date
+    
+    Example:
+    ```json
+    {
+        "date": "2026-02-10",
+        "meal_type": "dinner",
+        "recipe_name": "Apple Chicken",
+        "recipe_id": "abc-123"
+    }
+    ```
+    """
+    # Get or create meal plan for the week containing this date
+    meal_plan = MealPlanRepository.get_meal_plan_for_week(current_user_id, meal_data.date)
+    
+    if not meal_plan:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to get or create meal plan for the specified week"
+        )
+    
+    # Add the planned meal to this date
+    meal = MealPlanRepository.create_planned_meal(
+        meal_plan_id=meal_plan['id'],
+        user_id=current_user_id,
+        meal_data=meal_data.model_dump()
+    )
+    
+    if not meal:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to add meal to the date"
+        )
+    
+    return meal
+
+
 @router.get("/", response_model=List[MealPlanResponse])
 def get_meal_plans(
     status_filter: Optional[str] = Query(None, pattern="^(draft|active|completed)$"),
@@ -150,6 +210,66 @@ def get_meal_plans(
     )
     
     return meal_plans
+
+
+@router.get("/current", response_model=MealPlanSummary)
+def get_current_week_meal_plan(
+    current_user_id: str = Depends(get_current_user_id)
+):
+    """
+    Get or create meal plan for the current week
+    
+    Returns:
+    - Meal plan for current week (Monday-Sunday)
+    - If no plan exists for this week, creates one automatically
+    - Includes planned_meals and shopping_list_items
+    
+    Use for:
+    - Home screen "This Week's Meal Plan" section
+    - Quick access to current week without knowing meal_plan_id
+    - Auto-creating new weeks as needed
+    """
+    meal_plan = MealPlanRepository.get_current_week_meal_plan(current_user_id)
+    
+    if not meal_plan:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to get or create current week meal plan"
+        )
+    
+    return meal_plan
+
+
+@router.get("/week", response_model=MealPlanSummary)
+def get_meal_plan_for_week(
+    date_param: date = Query(..., alias="date", description="Any date within the target week (YYYY-MM-DD)"),
+    current_user_id: str = Depends(get_current_user_id)
+):
+    """
+    Get or create meal plan for a specific week
+    
+    Query params:
+    - date: Any date within the target week (e.g., "2026-02-10")
+    
+    Returns:
+    - Meal plan for the week containing the given date (Monday-Sunday)
+    - If no plan exists for that week, creates one automatically
+    - Includes planned_meals and shopping_list_items
+    
+    Use for:
+    - Planning view week navigation
+    - Getting next/previous week's meal plan
+    - Creating meal plans for future weeks
+    """
+    meal_plan = MealPlanRepository.get_meal_plan_for_week(current_user_id, date_param)
+    
+    if not meal_plan:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to get or create meal plan for the specified week"
+        )
+    
+    return meal_plan
 
 
 @router.get("/{meal_plan_id}", response_model=MealPlanResponse)

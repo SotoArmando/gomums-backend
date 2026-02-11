@@ -1,0 +1,196 @@
+name,category,difficulty,prep_time,servings,ingredients,tags,featured,image,calories,protein,carbs,fat,fiber,instructions
+Classic Roasted Chicken,Main Course,medium,1 hour 30 minutes,6,"[""2 lbs Chicken Fillets"", ""2 onions Onions"", ""4 potatoes Potatoes"", ""4 cloves Garlic"", ""2 tbsp Olive Oil"", ""1/2 tsp Thyme"", ""to taste Salt"", ""to taste Black Pepper""]","[""roasted"", ""chicken"", ""dinner""]",True,,,,,,"[""Preheat oven to 425°F. Pat chicken dry and season generously with salt, pepper, and thyme."", ""Peel and quarter potatoes. Slice onions and mince garlic."", ""Place chicken in a roasting pan. Arrange potatoes and onions around it. Drizzle everything with olive oil and scatter garlic on top."", ""Roast for 45 minutes, then baste chicken with pan juices. Continue roasting for 30-45 more minutes until internal temperature reaches 165°F."", ""Let chicken rest for 10 minutes before carving."", ""Serve sliced chicken with roasted vegetables and pan juices drizzled over the top.""]"
+Creamy Chicken Pasta,Main Course,easy,30 minutes,4,"[""8 oz Chicken Fillets"", ""1/2 cup Milk"", ""1 cup shredded Local Cheese"", ""4 cloves Garlic"", ""1/4 cup Olive Oil"", ""1 tbsp Parsley"", ""1/2 tsp Salt"", ""1 tsp Black Pepper""]","[""pasta"", ""chicken"", ""creamy""]",True,,,,,,"[""Bring a large pot of salted water to boil. Cook pasta according to package directions until al dente. Reserve 1 cup pasta water before draining."", ""Cut chicken into bite-sized pieces. Season with salt and pepper."", ""Heat 2 tbsp olive oil in a large skillet over medium-high heat. Cook chicken until golden and cooked through, about 6-8 minutes. Remove and set aside."", ""In the same skillet, add remaining oil and minced garlic. Sauté for 1 minute until fragrant."", ""Add milk and cheese, stirring until melted. Add pasta and chicken, tossing to coat. Add pasta water if needed to thin the sauce."", ""Garnish with fresh parsley and serve immediately with extra cheese on the side.""]"
+Chicken Stir-Fry,Main Course,easy,25 minutes,4,"[""2 lbs Chicken Fillets"", ""2 cups White Rice"", ""2 onions Onions"", ""3 cloves Garlic"", ""1 tbsp Soy Sauce"", ""1 tbsp Olive Oil""]","[""stir-fry"", ""chicken"", ""asian""]",True,,,,,,"[""Cook rice according to package directions and keep warm."", ""Slice chicken into thin strips. Slice onions and mince garlic."", ""Heat oil in a large wok or skillet over high heat until nearly smoking."", ""Add chicken and stir-fry for 5-6 minutes until golden and cooked through. Remove and set aside."", ""Add onions and garlic to the wok, stir-fry for 2-3 minutes. Return chicken to wok."", ""Add soy sauce and toss everything together for 1 minute. Serve immediately over rice.""]"
+Honey Garlic Chicken,Main Course,easy,35 minutes,4,"[""2 lbs Chicken Fillets"", ""1 tbsp Honey"", ""2 cloves Garlic"", ""1 tbsp Soy Sauce"", ""3 tbsp Olive Oil"", ""1 tsp Salt""]","[""chicken"", ""sweet"", ""garlic""]",True,,,,,,"[""Cut chicken into bite-sized pieces and season with salt."", ""In a small bowl, whisk together honey, minced garlic, and soy sauce."", ""Heat 2 tbsp olive oil in a large skillet over medium-high heat."", ""Add chicken and cook for 8-10 minutes, stirring occasionally, until browned and cooked through."", ""Pour honey garlic sauce over chicken and toss to coat. Cook for 2-3 more minutes until sauce thickens and caramelizes."", ""Serve hot over rice or with steamed vegetables.""]"
+Lemon Herb Chicken,Main Course,easy,40 minutes,4,"[""1 lb Chicken Fillets"", ""1 tbsp Lemon Juice"", ""2 cloves Garlic"", ""1/2 tsp Thyme"", ""1 tbsp Olive Oil"", ""1/2 tsp Salt"", ""1/2 tsp Black Pepper""]","[""chicken"", ""lemon"", ""herbs""]",True,,,,,,"[""Pat chicken dry and season both sides with salt, pepper, and thyme."", ""In a small bowl, mix lemon juice with minced garlic."", ""Heat olive oil in a large skillet over medium-high heat."", ""Add chicken and cook for 5-6 minutes per side until golden brown and internal temperature reaches 165°F."", ""Pour lemon garlic mixture over chicken in the last 2 minutes of cooking."", ""Let rest for 5 minutes, then serve with the pan sauce drizzled over the top and fresh lemon wedges.""]"
+Chicken and Rice Casserole,Main Course,medium,1 hour,6,"[""1.5 lbs Chicken Fillets"", ""2 cups White Rice"", ""1/2 onion Onions"", ""1 cup Milk"", ""1/2 cup Local Cheese"", ""3 tbsp Butter"", ""2 tsp Salt"", ""1/4 tsp Black Pepper""]","[""casserole"", ""chicken"", ""rice""]",True,,,,,,
+,"[]"
+BBQ Chicken,Main Course,easy,45 minutes,4,"[""8 oz Chicken Fillets"", ""2 tbsp Ketchup"", ""2 tbsp Honey"", ""1 clove Garlic"", ""2 tsp Paprika"", ""1/2 tsp Salt""]","[""bbq"", ""chicken"", ""grilled""]",True,,,,,,
+,"[]"
+Chicken Soup,Soup,easy,45 minutes,6,"[""1 lb Chicken Fillets"", ""1 onion Onions"", ""2 lbs Potatoes"", ""3 cups Bottled Water"", ""4 cloves Garlic"", ""1/4 cup chopped Parsley"", ""to taste Salt"", ""1/4 tsp Black Pepper""]","[""soup"", ""chicken"", ""comfort food""]",True,,,,,,
+,"[]"
+Creamy Chicken and Mushroom,Main Course,medium,35 minutes,4,"[""2 lbs Chicken Fillets"", ""1 cup Milk"", ""1 large onion Onions"", ""4 cloves Garlic"", ""1/4 cup Butter"", ""1/4 cup Flour"", ""2 tsp Salt"", ""to taste Black Pepper""]","[""chicken"", ""creamy"", ""mushroom""]",True,,,,,,
+,"[]"
+Chicken Lettuce Wraps,Appetizer,easy,20 minutes,4,"[""1.5 lbs Chicken Fillets"", ""1/2 head Lettuce"", ""1/2 onion Onions"", ""2 cloves Garlic"", ""2 tbsp Soy Sauce"", ""2 tbsp Olive Oil""]","[""wraps"", ""chicken"", ""lettuce"", ""healthy""]",True,,,,,,
+,"[]"
+Baked Chicken Thighs,Main Course,easy,50 minutes,4,"[""1 lb Chicken Fillets"", ""3 cloves Garlic"", ""1/2 tsp Paprika"", ""3 tbsp Olive Oil"", ""1/2 tsp Salt"", ""1/4 tsp Black Pepper""]","[""baked"", ""chicken"", ""easy""]",True,,,,,,
+,"[]"
+Chicken Parmesan,Main Course,medium,45 minutes,4,"[""1.5 lbs Chicken Fillets"", ""6 eggs Eggs"", ""1 cup Flour"", ""4 oz Local Cheese"", ""1 can diced Tomatoes"", ""2 tbsp Basil"", ""3 tbsp Olive Oil"", ""1/2 tsp Salt""]","[""chicken"", ""parmesan"", ""italian""]",True,,,,,,
+,"[]"
+Chicken Rice Bowl,Main Course,easy,30 minutes,4,"[""1 lb Chicken Fillets"", ""2 cups White Rice"", ""1/2 onion Onions"", ""1 tbsp Soy Sauce"", ""4 cloves Garlic"", ""2 tbsp Olive Oil"", ""6 eggs Eggs""]","[""bowl"", ""chicken"", ""rice""]",True,,,,,,
+,"[]"
+Orange Glazed Chicken,Main Course,medium,40 minutes,4,"[""1.5 lbs Chicken Fillets"", ""1 orange Oranges"", ""2 tbsp Honey"", ""1 clove Garlic"", ""2 tbsp Soy Sauce"", ""2 tbsp Olive Oil""]","[""chicken"", ""orange"", ""glazed""]",True,,,,,,
+,"[]"
+Chicken Quesadilla,Main Course,easy,25 minutes,4,"[""1 lb Chicken Fillets"", ""4 oz Local Cheese"", ""1 onion Onions"", ""3 tbsp Butter""]","[""quesadilla"", ""chicken"", ""mexican""]",True,,,,,,
+,"[]"
+Teriyaki Chicken,Main Course,easy,30 minutes,4,"[""1.5 lbs Chicken Fillets"", ""2 tbsp Soy Sauce"", ""1 tbsp Honey"", ""2 cloves Garlic"", ""1 cup White Rice""]","[""teriyaki"", ""chicken"", ""asian""]",True,,,,,,
+,"[]"
+Chicken Salad,Salad,easy,20 minutes,4,"[""1.5 lbs Chicken Fillets"", ""2 cups chopped Lettuce"", ""2 tomatoes Tomatoes"", ""1 large onion Onions"", ""1/4 cup Olive Oil"", ""3 tbsp Lemon Juice"", ""1 tsp Salt"", ""1 tsp Black Pepper""]","[""salad"", ""chicken"", ""healthy""]",True,,,,,,
+,"[]"
+Cheesy Chicken Bake,Main Course,medium,50 minutes,6,"[""2 lbs Chicken Fillets"", ""1 cup shredded Local Cheese"", ""2 cups Milk"", ""1/4 cup Butter"", ""1/4 cup Flour"", ""1 clove Garlic"", ""to taste Salt""]","[""baked"", ""chicken"", ""cheesy""]",True,,,,,,
+,"[]"
+Chicken Fried Rice,Main Course,easy,25 minutes,4,"[""1 lb Chicken Fillets"", ""1/2 cup White Rice"", ""4 eggs Eggs"", ""2 onions Onions"", ""2 tbsp Soy Sauce"", ""4 cloves Garlic"", ""2 tbsp Olive Oil""]","[""fried rice"", ""chicken"", ""asian""]",True,,,,,,
+,"[]"
+Apple Chicken,Main Course,medium,45 minutes,4,"[""8 oz Chicken Fillets"", ""1 apple Apples"", ""1/2 onion Onions"", ""2 tbsp Butter"", ""1/2 tsp Thyme"", ""1 tsp Salt"", ""1/2 tsp Black Pepper""]","[""chicken"", ""apple"", ""sweet-savory""]",True,,,,,,
+,"[]"
+Classic Beef Stew,Main Course,medium,2 hours,6,"[""1 lb Beef Round"", ""4 potatoes Potatoes"", ""1/2 onion Onions"", ""1 cup Bottled Water"", ""1 clove Garlic"", ""1/2 tsp Thyme"", ""2 leaves Bay Leaves"", ""2 tbsp Olive Oil"", ""1/2 tsp Salt"", ""1/4 tsp Black Pepper""]","[""stew"", ""beef"", ""comfort food""]",False,,,,,,
+,"[]"
+Beef Stir-Fry,Main Course,easy,30 minutes,4,"[""1 lb Beef Round"", ""3 cups White Rice"", ""1 onion Onions"", ""4 cloves Garlic"", ""2 tbsp Soy Sauce"", ""2 tbsp Olive Oil""]","[""stir-fry"", ""beef"", ""asian""]",False,,,,,,
+,"[]"
+Beef and Potato Casserole,Main Course,medium,1 hour 15 minutes,6,"[""12 oz Beef Round"", ""4 potatoes Potatoes"", ""1 large onion Onions"", ""1 cup shredded Local Cheese"", ""1 cup Milk"", ""3 tbsp Butter"", ""2 tsp Salt"", ""1/4 tsp Black Pepper""]","[""casserole"", ""beef"", ""potato""]",False,,,,,,
+,"[]"
+Beef Tacos,Main Course,easy,30 minutes,4,"[""1.5 lbs Beef Round"", ""1 head Lettuce"", ""4 tomatoes Tomatoes"", ""2 onions Onions"", ""1 cup shredded Local Cheese"", ""1/2 tsp Cumin"", ""1/2 tsp Paprika"", ""to taste Salt""]","[""tacos"", ""beef"", ""mexican""]",False,,,,,,
+,"[]"
+Garlic Beef with Rice,Main Course,easy,35 minutes,4,"[""12 oz Beef Round"", ""2 cups White Rice"", ""3 cloves Garlic"", ""1 onion Onions"", ""2 tbsp Soy Sauce"", ""2 tbsp Olive Oil"", ""to taste Black Pepper""]","[""beef"", ""rice"", ""garlic""]",False,,,,,,
+,"[]"
+Beef and Onion Skillet,Main Course,easy,25 minutes,4,"[""1 lb Beef Round"", ""1 onion Onions"", ""4 cloves Garlic"", ""2 tbsp Butter"", ""to taste Salt"", ""1/2 tsp Black Pepper""]","[""beef"", ""onion"", ""skillet""]",False,,,,,,
+,"[]"
+Beer Braised Beef,Main Course,medium,2 hours,6,"[""2 lbs Beef Round"", ""1 can Beer"", ""1 large onion Onions"", ""4 cloves Garlic"", ""1 leaf Bay Leaves"", ""1 tsp Thyme"", ""1/4 cup Olive Oil"", ""1 tsp Salt"", ""1/2 tsp Black Pepper""]","[""braised"", ""beef"", ""beer""]",False,,,,,,
+,"[]"
+Beef Rice Bowl,Main Course,easy,30 minutes,4,"[""1 lb Beef Round"", ""1/2 cup White Rice"", ""3 eggs Eggs"", ""1 large onion Onions"", ""1 tbsp Soy Sauce"", ""4 cloves Garlic""]","[""bowl"", ""beef"", ""rice""]",False,,,,,,
+,"[]"
+Beef Lettuce Wraps,Appetizer,easy,20 minutes,4,"[""2 lbs Beef Round"", ""2 cups chopped Lettuce"", ""2 onions Onions"", ""2 cloves Garlic"", ""3 tbsp Soy Sauce"", ""1/4 cup Olive Oil""]","[""wraps"", ""beef"", ""healthy""]",False,,,,,,
+,"[]"
+Cheesy Beef Bake,Main Course,medium,50 minutes,6,"[""1.5 lbs Beef Round"", ""8 oz Local Cheese"", ""1/2 onion Onions"", ""4 tomatoes Tomatoes"", ""4 cloves Garlic"", ""2 tsp Oregano"", ""2 tsp Salt""]","[""baked"", ""beef"", ""cheesy""]",False,,,,,,
+,"[]"
+Beef Soup,Soup,medium,1 hour 30 minutes,6,"[""2 lbs Beef Round"", ""2 lbs Potatoes"", ""1 large onion Onions"", ""1 cup Bottled Water"", ""2 cloves Garlic"", ""2 leaves Bay Leaves"", ""2 tsp Salt"", ""1 tsp Black Pepper""]","[""soup"", ""beef"", ""hearty""]",False,,,,,,
+,"[]"
+Simple Beef Roast,Main Course,medium,2 hours,8,"[""12 oz Beef Round"", ""3 potatoes Potatoes"", ""2 onions Onions"", ""2 cloves Garlic"", ""1 tsp Thyme"", ""2 tbsp Olive Oil"", ""to taste Salt"", ""to taste Black Pepper""]","[""roast"", ""beef"", ""dinner""]",False,,,,,,
+,"[]"
+Beef and Egg Breakfast Bowl,Breakfast,easy,20 minutes,2,"[""1 lb Beef Round"", ""4 eggs Eggs"", ""2 onions Onions"", ""4 tbsp Butter"", ""2 tsp Salt"", ""to taste Black Pepper""]","[""breakfast"", ""beef"", ""eggs""]",False,,,,,,
+,"[]"
+Mustard Beef,Main Course,medium,40 minutes,4,"[""1.5 lbs Beef Round"", ""1 tbsp Mustard"", ""1 tbsp Honey"", ""1 clove Garlic"", ""1 tbsp Olive Oil"", ""2 tsp Salt""]","[""beef"", ""mustard"", ""tangy""]",False,,,,,,
+,"[]"
+Beef and Tomato Pasta,Main Course,easy,35 minutes,4,"[""2 lbs Beef Round"", ""1 can diced Tomatoes"", ""2 onions Onions"", ""4 cloves Garlic"", ""2 tbsp Basil"", ""3 tbsp Olive Oil"", ""1/2 tsp Salt""]","[""pasta"", ""beef"", ""tomato""]",False,,,,,,
+,"[]"
+Classic Fried Rice,Main Course,easy,20 minutes,4,"[""3 cups White Rice"", ""6 eggs Eggs"", ""2 onions Onions"", ""1 clove Garlic"", ""2 tbsp Soy Sauce"", ""2 tbsp Olive Oil""]","[""fried rice"", ""vegetarian"", ""asian""]",False,,,,,,
+,"[]"
+Cheese Rice Casserole,Side Dish,easy,40 minutes,6,"[""2 cups White Rice"", ""1/2 cup Local Cheese"", ""1/2 cup Milk"", ""4 tbsp Butter"", ""1/2 onion Onions"", ""2 tsp Salt""]","[""casserole"", ""rice"", ""cheesy""]",False,,,,,,
+,"[]"
+Rice and Beans,Main Course,easy,45 minutes,6,"[""2 cups White Rice"", ""2 onions Onions"", ""2 cloves Garlic"", ""1 tsp Cumin"", ""2 tbsp Olive Oil"", ""1/2 tsp Salt""]","[""rice"", ""beans"", ""vegetarian""]",False,,,,,,
+,"[]"
+Tomato Rice,Side Dish,easy,30 minutes,4,"[""1 cup White Rice"", ""2 tomatoes Tomatoes"", ""2 onions Onions"", ""3 cloves Garlic"", ""3 tbsp Olive Oil"", ""to taste Salt""]","[""rice"", ""tomato"", ""side dish""]",False,,,,,,
+,"[]"
+Creamy Rice Pudding,Dessert,easy,45 minutes,6,"[""2 cups White Rice"", ""1 liter Milk"", ""1/2 cup Sugar"", ""2 tbsp Butter"", ""1/2 tsp Salt""]","[""dessert"", ""rice"", ""pudding""]",False,,,,,,
+,"[]"
+Potato Soup,Soup,easy,35 minutes,6,"[""3 potatoes Potatoes"", ""1/2 onion Onions"", ""1/2 cup Milk"", ""4 tbsp Butter"", ""4 cloves Garlic"", ""to taste Salt"", ""to taste Black Pepper""]","[""soup"", ""potato"", ""creamy""]",False,,,,,,
+,"[]"
+Roasted Potatoes,Side Dish,easy,40 minutes,4,"[""3 potatoes Potatoes"", ""3 cloves Garlic"", ""2 tbsp Olive Oil"", ""1 tsp Thyme"", ""2 tsp Salt"", ""1/2 tsp Black Pepper""]","[""roasted"", ""potato"", ""side dish""]",False,,,,,,
+,"[]"
+Mashed Potatoes,Side Dish,easy,25 minutes,6,"[""4 potatoes Potatoes"", ""1 cup Milk"", ""1/4 cup Butter"", ""1/2 tsp Salt"", ""1/4 tsp Black Pepper""]","[""mashed"", ""potato"", ""side dish""]",False,,,,,,
+,"[]"
+Potato Salad,Salad,easy,30 minutes,6,"[""2 lbs Potatoes"", ""4 eggs Eggs"", ""1 onion Onions"", ""3 tbsp Olive Oil"", ""3 tbsp Vinegar"", ""1 tsp Mustard"", ""to taste Salt""]","[""salad"", ""potato"", ""picnic""]",False,,,,,,
+,"[]"
+Cheesy Potato Bake,Side Dish,medium,1 hour,8,"[""3 potatoes Potatoes"", ""8 oz Local Cheese"", ""1/2 cup Milk"", ""3 tbsp Butter"", ""2 cloves Garlic"", ""to taste Salt"", ""1/4 tsp Black Pepper""]","[""baked"", ""potato"", ""cheesy""]",False,,,,,,
+,"[]"
+Garden Salad,Salad,easy,15 minutes,4,"[""1/2 head Lettuce"", ""1 can diced Tomatoes"", ""1/2 onion Onions"", ""1 tbsp Olive Oil"", ""1 tbsp Lemon Juice"", ""1/2 tsp Salt"", ""1/2 tsp Black Pepper""]","[""salad"", ""fresh"", ""healthy""]",False,,,,,,
+,"[]"
+Tomato Soup,Soup,easy,30 minutes,4,"[""1 can diced Tomatoes"", ""2 onions Onions"", ""2 cloves Garlic"", ""2 tbsp Basil"", ""2 tbsp Olive Oil"", ""1/2 tsp Salt"", ""to taste Black Pepper""]","[""soup"", ""tomato"", ""comfort food""]",False,,,,,,
+,"[]"
+Stuffed Tomatoes,Main Course,medium,45 minutes,4,"[""2 tomatoes Tomatoes"", ""1/2 cup White Rice"", ""1/2 onion Onions"", ""1 cup shredded Local Cheese"", ""1 clove Garlic"", ""2 tbsp Basil"", ""2 tbsp Olive Oil"", ""1/2 tsp Salt""]","[""stuffed"", ""tomato"", ""baked""]",False,,,,,,
+,"[]"
+Onion Soup,Soup,medium,50 minutes,4,"[""2 onions Onions"", ""4 slices Fresh White Bread"", ""1 cup shredded Local Cheese"", ""1/4 cup Butter"", ""3 cups Bottled Water"", ""2 tsp Salt"", ""to taste Black Pepper""]","[""soup"", ""onion"", ""french""]",False,,,,,,
+,"[]"
+Rice Pilaf,Side Dish,easy,30 minutes,4,"[""1/2 cup White Rice"", ""1/2 onion Onions"", ""3 cloves Garlic"", ""2 tbsp Butter"", ""2 tbsp chopped Parsley"", ""1/2 tsp Salt""]","[""rice"", ""pilaf"", ""side dish""]",False,,,,,,
+,"[]"
+Classic Scrambled Eggs,Breakfast,easy,10 minutes,2,"[""1 egg Eggs"", ""1 cup Milk"", ""4 tbsp Butter"", ""to taste Salt"", ""1 tsp Black Pepper""]","[""breakfast"", ""eggs"", ""quick""]",False,,,,,,
+,"[]"
+French Toast,Breakfast,easy,15 minutes,4,"[""2 slices Fresh White Bread"", ""1 egg Eggs"", ""1 liter Milk"", ""1/4 cup Sugar"", ""1/4 cup Butter""]","[""breakfast"", ""french toast"", ""sweet""]",False,,,,,,
+,"[]"
+Cheese Omelette,Breakfast,easy,15 minutes,2,"[""4 eggs Eggs"", ""1 cup shredded Local Cheese"", ""2 tbsp Butter"", ""1 tsp Salt"", ""1/2 tsp Black Pepper""]","[""breakfast"", ""omelette"", ""cheese""]",False,,,,,,
+,"[]"
+Egg Salad Sandwich,Lunch,easy,15 minutes,2,"[""1 egg Eggs"", ""4 slices Fresh White Bread"", ""1 onion Onions"", ""1/2 head Lettuce"", ""1 tsp Salt"", ""1 tsp Black Pepper""]","[""sandwich"", ""eggs"", ""lunch""]",False,,,,,,
+,"[]"
+Baked Eggs,Breakfast,easy,20 minutes,4,"[""3 eggs Eggs"", ""4 tomatoes Tomatoes"", ""1/2 cup Local Cheese"", ""3 cloves Garlic"", ""1 tbsp Basil"", ""3 tbsp Olive Oil"", ""2 tsp Salt""]","[""breakfast"", ""eggs"", ""baked""]",False,,,,,,
+,"[]"
+Egg Fried Rice,Main Course,easy,20 minutes,4,"[""2 eggs Eggs"", ""2 cups White Rice"", ""1/2 onion Onions"", ""3 cloves Garlic"", ""3 tbsp Soy Sauce"", ""2 tbsp Olive Oil""]","[""fried rice"", ""eggs"", ""asian""]",False,,,,,,
+,"[]"
+Veggie Omelette,Breakfast,easy,20 minutes,2,"[""4 eggs Eggs"", ""2 tomatoes Tomatoes"", ""1 large onion Onions"", ""1/2 cup Local Cheese"", ""4 tbsp Butter"", ""to taste Salt"", ""1/2 tsp Black Pepper""]","[""breakfast"", ""omelette"", ""vegetables""]",False,,,,,,
+,"[]"
+Bread Pudding,Dessert,medium,1 hour,8,"[""4 slices Fresh White Bread"", ""2 eggs Eggs"", ""1 liter Milk"", ""1/4 cup Sugar"", ""2 tbsp Butter""]","[""dessert"", ""bread"", ""pudding""]",False,,,,,,
+,"[]"
+Egg Drop Soup,Soup,easy,15 minutes,4,"[""4 eggs Eggs"", ""2 cups Bottled Water"", ""1 clove Garlic"", ""1 large onion Onions"", ""1 tbsp Soy Sauce"", ""2 tsp Salt""]","[""soup"", ""eggs"", ""asian""]",False,,,,,,
+,"[]"
+Cheese Toast,Breakfast,easy,10 minutes,2,"[""4 slices Fresh White Bread"", ""4 oz Local Cheese"", ""1/4 cup Butter"", ""4 cloves Garlic""]","[""breakfast"", ""toast"", ""cheese""]",False,,,,,,
+,"[]"
+Eggs Benedict Style,Breakfast,medium,25 minutes,2,"[""6 eggs Eggs"", ""4 slices Fresh White Bread"", ""1/4 cup Butter"", ""3 tbsp Lemon Juice"", ""1 tsp Salt"", ""to taste Black Pepper""]","[""breakfast"", ""eggs"", ""fancy""]",False,,,,,,
+,"[]"
+Simple Egg Sandwich,Breakfast,easy,10 minutes,1,"[""6 eggs Eggs"", ""1 loaf Fresh White Bread"", ""1/4 cup Butter"", ""1/2 tsp Salt"", ""to taste Black Pepper""]","[""breakfast"", ""sandwich"", ""quick""]",False,,,,,,
+,"[]"
+Banana Bread,Dessert,medium,1 hour 15 minutes,10,"[""3 bananas Bananas"", ""1/4 cup Flour"", ""1/2 cup Sugar"", ""4 eggs Eggs"", ""4 tbsp Butter"", ""2 cups Milk""]","[""dessert"", ""banana"", ""bread""]",False,,,,,,
+,"[]"
+Apple Crisp,Dessert,easy,45 minutes,6,"[""1 apple Apples"", ""2 tbsp Sugar"", ""2 cups Flour"", ""2 tbsp Butter""]","[""dessert"", ""apple"", ""baked""]",False,,,,,,
+,"[]"
+Baked Apples,Dessert,easy,40 minutes,4,"[""1 apple Apples"", ""1/2 cup Sugar"", ""4 tbsp Butter""]","[""dessert"", ""apple"", ""simple""]",False,,,,,,
+,"[]"
+Banana Pancakes,Breakfast,easy,20 minutes,4,"[""3 bananas Bananas"", ""6 eggs Eggs"", ""1/2 cup Flour"", ""2 cups Milk"", ""1/4 cup Sugar"", ""1/4 cup Butter""]","[""breakfast"", ""pancakes"", ""banana""]",False,,,,,,
+,"[]"
+Caramelized Bananas,Dessert,easy,15 minutes,4,"[""1 banana Bananas"", ""2 tbsp Sugar"", ""2 tbsp Butter""]","[""dessert"", ""banana"", ""caramel""]",False,,,,,,
+,"[]"
+Orange Marmalade,Condiment,medium,1 hour 30 minutes,16,"[""4 oranges Oranges"", ""1/2 cup Sugar""]","[""marmalade"", ""orange"", ""preserve""]",False,,,,,,
+,"[]"
+Fruit Salad,Dessert,easy,15 minutes,6,"[""1 apple Apples"", ""2 bananas Bananas"", ""4 oranges Oranges"", ""2 tbsp Honey"", ""1 tbsp Lemon Juice""]","[""dessert"", ""fruit"", ""healthy""]",False,,,,,,
+,"[]"
+Baked Custard,Dessert,medium,50 minutes,6,"[""6 eggs Eggs"", ""1 cup Milk"", ""1/4 cup Sugar""]","[""dessert"", ""custard"", ""baked""]",False,,,,,,
+,"[]"
+Simple Cheese Cake,Dessert,hard,2 hours,12,"[""1/2 cup Local Cheese"", ""4 eggs Eggs"", ""1/2 cup Sugar"", ""1/4 cup Flour"", ""4 tbsp Butter"", ""2 cups Milk""]","[""dessert"", ""cheesecake"", ""baked""]",False,,,,,,
+,"[]"
+Milk Toast,Dessert,easy,10 minutes,2,"[""1 loaf Fresh White Bread"", ""1/2 cup Milk"", ""1/2 cup Sugar"", ""4 tbsp Butter""]","[""dessert"", ""toast"", ""comfort food""]",False,,,,,,
+,"[]"
+Grilled Cheese Sandwich,Lunch,easy,10 minutes,1,"[""6 slices Fresh White Bread"", ""1 cup shredded Local Cheese"", ""4 tbsp Butter""]","[""sandwich"", ""cheese"", ""lunch""]",False,,,,,,
+,"[]"
+Tomato Cheese Toast,Lunch,easy,15 minutes,2,"[""4 slices Fresh White Bread"", ""1 can diced Tomatoes"", ""1 cup shredded Local Cheese"", ""2 tbsp Butter"", ""1 tbsp Basil"", ""2 tsp Salt""]","[""toast"", ""tomato"", ""cheese""]",False,,,,,,
+,"[]"
+Egg and Cheese Sandwich,Breakfast,easy,15 minutes,1,"[""6 eggs Eggs"", ""6 slices Fresh White Bread"", ""1/2 cup Local Cheese"", ""3 tbsp Butter"", ""1 tsp Salt""]","[""sandwich"", ""breakfast"", ""eggs""]",False,,,,,,
+,"[]"
+Chicken Salad Sandwich,Lunch,easy,20 minutes,2,"[""2 lbs Chicken Fillets"", ""1 loaf Fresh White Bread"", ""1/2 head Lettuce"", ""1/2 onion Onions"", ""1/2 tsp Salt"", ""1 tsp Black Pepper""]","[""sandwich"", ""chicken"", ""lunch""]",False,,,,,,
+,"[]"
+BLT Sandwich,Lunch,easy,15 minutes,2,"[""6 slices Fresh White Bread"", ""1 head Lettuce"", ""4 tomatoes Tomatoes"", ""4 tbsp Butter"", ""1 tsp Salt"", ""1/4 tsp Black Pepper""]","[""sandwich"", ""classic"", ""lunch""]",False,,,,,,
+,"[]"
+Cheese and Onion Sandwich,Lunch,easy,10 minutes,1,"[""6 slices Fresh White Bread"", ""1 cup shredded Local Cheese"", ""2 onions Onions"", ""3 tbsp Butter""]","[""sandwich"", ""cheese"", ""onion""]",False,,,,,,
+,"[]"
+Open-Faced Cheese Melt,Lunch,easy,12 minutes,2,"[""2 slices Fresh White Bread"", ""1/2 cup Local Cheese"", ""2 tomatoes Tomatoes"", ""4 cloves Garlic"", ""2 tbsp Olive Oil""]","[""open-faced"", ""cheese"", ""lunch""]",False,,,,,,
+,"[]"
+Chicken Cheese Melt,Lunch,easy,20 minutes,2,"[""1.5 lbs Chicken Fillets"", ""6 slices Fresh White Bread"", ""4 oz Local Cheese"", ""1/4 cup Butter"", ""4 cloves Garlic""]","[""sandwich"", ""chicken"", ""cheese""]",False,,,,,,
+,"[]"
+Beef and Cheese Sandwich,Lunch,easy,20 minutes,2,"[""1 lb Beef Round"", ""6 slices Fresh White Bread"", ""8 oz Local Cheese"", ""1/2 onion Onions"", ""2 tbsp Mustard""]","[""sandwich"", ""beef"", ""cheese""]",False,,,,,,
+,"[]"
+Tomato and Egg Sandwich,Breakfast,easy,15 minutes,1,"[""4 eggs Eggs"", ""1 loaf Fresh White Bread"", ""1 can diced Tomatoes"", ""1/4 cup Butter"", ""2 tsp Salt"", ""1/4 tsp Black Pepper""]","[""sandwich"", ""breakfast"", ""simple""]",False,,,,,,
+,"[]"
+Banana Smoothie,Beverage,easy,5 minutes,2,"[""3 bananas Bananas"", ""1 liter Milk"", ""1 cup Sugar"", ""2 tbsp Honey""]","[""smoothie"", ""banana"", ""drink""]",False,,,,,,
+,"[]"
+Orange Juice,Beverage,easy,5 minutes,2,"[""1 orange Oranges"", ""2 tbsp Sugar""]","[""juice"", ""orange"", ""fresh""]",False,,,,,,
+,"[]"
+Apple Cider,Beverage,medium,1 hour,8,"[""3 apples Apples"", ""1 cup Sugar""]","[""cider"", ""apple"", ""drink""]",False,,,,,,
+,"[]"
+Hot Milk with Honey,Beverage,easy,5 minutes,1,"[""1 cup Milk"", ""1 tbsp Honey""]","[""milk"", ""honey"", ""warm""]",False,,,,,,
+,"[]"
+Garlic Bread,Side Dish,easy,15 minutes,4,"[""4 slices Fresh White Bread"", ""3 cloves Garlic"", ""3 tbsp Butter"", ""2 tbsp chopped Parsley""]","[""bread"", ""garlic"", ""side dish""]",False,,,,,,
+,"[]"
+Wine Poached Pears,Dessert,medium,45 minutes,4,"[""1/2 cup Wine"", ""2 tbsp Sugar""]","[""dessert"", ""wine"", ""elegant""]",False,,,,,,
+,"[]"
+Beer Battered Onion Rings,Appetizer,medium,30 minutes,4,"[""1 large onion Onions"", ""1/2 cup Beer"", ""1/4 cup Flour"", ""4 eggs Eggs"", ""2 tsp Salt"", ""1/2 tsp Black Pepper""]","[""appetizer"", ""fried"", ""onion rings""]",False,,,,,,
+,"[]"
+Cheese Fondue,Appetizer,medium,25 minutes,4,"[""4 oz Local Cheese"", ""1/2 cup Wine"", ""4 cloves Garlic"", ""1 loaf Fresh White Bread""]","[""fondue"", ""cheese"", ""party""]",False,,,,,,
+,"[]"
+Potato Pancakes,Side Dish,medium,30 minutes,4,"[""4 potatoes Potatoes"", ""1 egg Eggs"", ""1 large onion Onions"", ""1 cup Flour"", ""1 tsp Salt"", ""1/2 tsp Black Pepper""]","[""pancakes"", ""potato"", ""fried""]",False,,,,,,
+,"[]"
+Apple Butter,Condiment,medium,2 hours,20,"[""1 apple Apples"", ""2 tbsp Sugar""]","[""spread"", ""apple"", ""preserve""]",False,,,,,,
+,"[]"
+Tomato Bruschetta,Appetizer,easy,15 minutes,4,"[""6 slices Fresh White Bread"", ""2 tomatoes Tomatoes"", ""1 clove Garlic"", ""1/4 cup fresh Basil"", ""1/4 cup Olive Oil"", ""1 tsp Salt""]","[""bruschetta"", ""italian"", ""appetizer""]",False,,,,,,
+,"[]"
+Banana Foster,Dessert,medium,20 minutes,4,"[""3 bananas Bananas"", ""2 tbsp Sugar"", ""1/4 cup Butter""]","[""dessert"", ""banana"", ""caramel""]",False,,,,,,
+,"[]"
+Orange Chicken,Main Course,medium,40 minutes,4,"[""8 oz Chicken Fillets"", ""3 oranges Oranges"", ""2 tbsp Soy Sauce"", ""3 tbsp Honey"", ""4 cloves Garlic"", ""3 cups White Rice""]","[""chicken"", ""orange"", ""asian""]",False,,,,,,
+,"[]"
+Beef Barley Soup,Soup,medium,1 hour 30 minutes,6,"[""2 lbs Beef Round"", ""4 potatoes Potatoes"", ""1 onion Onions"", ""3 cups Bottled Water"", ""2 cloves Garlic"", ""1/2 tsp Thyme"", ""to taste Salt""]","[""soup"", ""beef"", ""barley""]",False,,,,,,
+,"[]"
+Breakfast Burrito,Breakfast,easy,15 minutes,2,"[""2 eggs Eggs"", ""1/2 cup Local Cheese"", ""1 onion Onions"", ""1 can diced Tomatoes"", ""2 tbsp Butter"", ""to taste Salt""]","[""breakfast"", ""burrito"", ""eggs""]",False,,,,,,
+,"[]"
+Lettuce Wraps,Appetizer,easy,15 minutes,4,"[""1/2 head Lettuce"", ""2 onions Onions"", ""1 clove Garlic"", ""3 tbsp Soy Sauce""]","[""wraps"", ""lettuce"", ""healthy""]",False,,,,,,
+,"[]"
+Apple Pie,Dessert,hard,1 hour 45 minutes,8,"[""3 apples Apples"", ""1/4 cup Flour"", ""1/2 cup Sugar"", ""3 tbsp Butter""]","[""pie"", ""apple"", ""baked""]",False,,,,,,
+,"[]"
+Orange Salad,Salad,easy,10 minutes,4,"[""4 oranges Oranges"", ""1 head Lettuce"", ""1 onion Onions"", ""1 tbsp Olive Oil"", ""3 tbsp Honey""]","[""salad"", ""orange"", ""fresh""]",False,,,,,,
+,"[]"

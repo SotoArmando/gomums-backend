@@ -5,7 +5,11 @@ This will show us the actual error
 """
 
 import sys
-sys.path.insert(0, '/mnt/c/Users/Armando Soto/Documents/GitHub/gomums-backend')
+import os
+
+# Add project root to Python path
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+sys.path.insert(0, project_root)
 
 from app.core.database import db
 from app.db.repositories.budget_repository import BudgetRepository

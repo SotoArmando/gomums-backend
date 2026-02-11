@@ -4,6 +4,7 @@ API endpoints for user-created private recipes
 """
 from typing import Optional, List
 from uuid import UUID
+from datetime import date, timedelta
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 
 from app.models.user_recipe import (
@@ -97,6 +98,62 @@ async def get_recipe_stats(
         "category_count": len(categories),
         "categories": categories
     }
+
+
+@router.get("/by-week")
+async def get_recipes_by_week(
+    week_start: Optional[date] = Query(
+        default=None,
+        description="Start of the week (Monday) in YYYY-MM-DD format. Defaults to current week's Monday."
+    ),
+    current_user: dict = Depends(get_current_user)
+):
+    """
+    Get user's private recipes grouped by the week they were created.
+    
+    Returns recipes organized by day of week (Monday-Sunday).
+    
+    - **week_start**: Start of the week (Monday). Defaults to current week.
+    
+    Example response:
+    ```json
+    {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "total_recipes": 5,
+        "recipes_by_day": {
+            "monday": [...],
+            "tuesday": [...],
+            "wednesday": [...],
+            "thursday": [...],
+            "friday": [...],
+            "saturday": [...],
+            "sunday": [...]
+        }
+    }
+    ```
+    """
+    user_id = current_user["sub"]
+    
+    # Calculate Monday of the current week if not provided
+    if week_start is None:
+        today = date.today()
+        # Monday is weekday 0
+        days_since_monday = today.weekday()
+        week_start = today - timedelta(days=days_since_monday)
+    else:
+        # Ensure it's a Monday
+        if week_start.weekday() != 0:
+            # Adjust to previous Monday
+            days_since_monday = week_start.weekday()
+            week_start = week_start - timedelta(days=days_since_monday)
+    
+    result = UserRecipeRepository.get_user_recipes_by_week(
+        user_id=user_id,
+        week_start=week_start.isoformat()
+    )
+    
+    return result
 
 
 @router.get("/{recipe_id}", response_model=UserRecipeResponse)
@@ -243,8 +300,10 @@ async def copy_public_recipe(
     The original recipe ID is stored for reference.
     """
     user_id = current_user["sub"]
+    print(f"[DEBUG ROUTE] copy_public_recipe called with recipe_id={recipe_id}, user_id={user_id}")
     
     recipe = UserRecipeRepository.copy_from_public_recipe(user_id, str(recipe_id))
+    print(f"[DEBUG ROUTE] Repository returned: {recipe is not None}")
     
     if not recipe:
         raise HTTPException(

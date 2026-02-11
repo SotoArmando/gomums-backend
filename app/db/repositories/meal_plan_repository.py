@@ -522,6 +522,106 @@ class MealPlanRepository:
             print(f"Error deleting shopping list item: {e}")
             return False
     
+    # ==================== Week-Based Methods ====================
+    
+    @staticmethod
+    def get_week_range(target_date: date) -> tuple[date, date]:
+        """
+        Get the start (Monday) and end (Sunday) of the week containing target_date
+        
+        Args:
+            target_date: Any date within the week
+            
+        Returns:
+            Tuple of (start_date, end_date) for the week
+        """
+        # Get the Monday of the week (weekday 0=Monday, 6=Sunday)
+        days_since_monday = target_date.weekday()
+        start_date = target_date - timedelta(days=days_since_monday)
+        end_date = start_date + timedelta(days=6)
+        return (start_date, end_date)
+    
+    @staticmethod
+    def get_current_week_meal_plan(user_id: str) -> Optional[dict]:
+        """
+        Get or create meal plan for the current week
+        
+        Returns meal plan with planned_meals and shopping_list_items
+        """
+        return MealPlanRepository.get_meal_plan_for_week(user_id, date.today())
+    
+    @staticmethod
+    def get_meal_plan_for_week(user_id: str, target_date: date) -> Optional[dict]:
+        """
+        Get or create meal plan for the week containing target_date
+        
+        Args:
+            user_id: User ID
+            target_date: Any date within the target week
+            
+        Returns:
+            Meal plan dict with planned_meals and shopping_list_items, or None on error
+        """
+        try:
+            # Calculate week range
+            start_date, end_date = MealPlanRepository.get_week_range(target_date)
+            
+            # Try to find existing meal plan for this week
+            with MealPlanRepository.db.get_cursor() as cursor:
+                cursor.execute("""
+                    SELECT 
+                        mp.id, mp.user_id, mp.name, mp.start_date, mp.end_date,
+                        mp.total_cost, mp.status, mp.created_at, mp.updated_at,
+                        COUNT(DISTINCT pm.id) as total_meals,
+                        COUNT(DISTINCT sli.id) as total_shopping_items,
+                        COUNT(DISTINCT sli.id) FILTER (WHERE sli.purchased = true) as shopping_items_purchased
+                    FROM meal_plans mp
+                    LEFT JOIN planned_meals pm ON pm.meal_plan_id = mp.id
+                    LEFT JOIN shopping_list_items sli ON sli.meal_plan_id = mp.id
+                    WHERE mp.user_id = %s
+                      AND mp.start_date = %s
+                      AND mp.end_date = %s
+                    GROUP BY mp.id
+                    LIMIT 1
+                """, (user_id, start_date, end_date))
+                
+                row = cursor.fetchone()
+                
+                if row:
+                    # Found existing plan
+                    meal_plan = dict(row)
+                else:
+                    # Create new plan for this week
+                    month_name = start_date.strftime('%b')
+                    day = start_date.day
+                    plan_name = f"Week of {month_name} {day}"
+                    
+                    meal_plan_data = {
+                        'name': plan_name,
+                        'start_date': start_date,
+                        'end_date': end_date,
+                        'status': 'draft'
+                    }
+                    
+                    meal_plan = MealPlanRepository.create_meal_plan(user_id, meal_plan_data)
+                    
+                    if not meal_plan:
+                        return None
+            
+            # Get planned meals
+            planned_meals = MealPlanRepository.get_planned_meals(meal_plan['id'], user_id)
+            meal_plan['planned_meals'] = planned_meals
+            
+            # Get shopping list items
+            shopping_items = MealPlanRepository.get_shopping_list_items(meal_plan['id'], user_id)
+            meal_plan['shopping_list_items'] = shopping_items
+            
+            return meal_plan
+            
+        except Exception as e:
+            print(f"Error getting/creating meal plan for week: {e}")
+            return None
+    
     # ==================== Helper Methods ====================
     
     @staticmethod

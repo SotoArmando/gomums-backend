@@ -168,6 +168,7 @@ class UserRecipeSummary(BaseModel):
     difficulty: Optional[str] = None
     category: Optional[str] = None
     is_favorite: bool = False
+    original_recipe_id: Optional[str] = None
     created_at: datetime
 
     model_config = {

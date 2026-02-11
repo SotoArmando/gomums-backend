@@ -59,6 +59,53 @@ async def get_recipes(
         response.append(RecipeResponse(
             id=recipe["id"],
             name=recipe["name"],
+            description=recipe.get("description"),
+            image=recipe["image"],
+            prep_time=recipe["prep_time"],
+            servings=recipe["servings"],
+            difficulty=recipe["difficulty"],
+            ingredients=recipe["ingredients"],
+            structured_ingredients=structured,
+            instructions=recipe["instructions"],
+            steps=[RecipeStep(**s) for s in recipe.get("steps", [])],
+            nutrition=NutritionInfo(
+                calories=recipe["calories"],
+                protein=recipe["protein"],
+                carbs=recipe["carbs"],
+                fat=recipe["fat"],
+                fiber=recipe["fiber"]
+            ),
+            featured=recipe["featured"],
+            category=recipe["category"],
+            tags=recipe["tags"],
+            created_at=recipe["created_at"],
+            updated_at=recipe["updated_at"]
+        ))
+    
+    return response
+
+
+@router.get("/with-steps", response_model=List[RecipeResponse])
+async def get_recipes_with_steps(
+    limit: int = Query(10, ge=1, le=50, description="Maximum number of results"),
+    offset: int = Query(0, ge=0, description="Number of results to skip"),
+    current_user: Dict[str, Any] = Depends(get_current_user)
+):
+    """
+    Get recipes that have structured steps with phases (Prepare, Cook, Serve)
+    
+    Returns recipes that have the 'steps' field populated with detailed cooking instructions.
+    """
+    recipes = await recipe_repo.get_recipes_with_steps(limit=limit, offset=offset)
+    
+    # Transform to response model
+    response = []
+    for recipe in recipes:
+        structured = [StructuredIngredient(**s) for s in recipe.get("structured_ingredients", [])]
+        response.append(RecipeResponse(
+            id=recipe["id"],
+            name=recipe["name"],
+            description=recipe.get("description"),
             image=recipe["image"],
             prep_time=recipe["prep_time"],
             servings=recipe["servings"],
@@ -102,6 +149,7 @@ async def get_recipe_by_id(
     return RecipeResponse(
         id=recipe["id"],
         name=recipe["name"],
+        description=recipe.get("description"),
         image=recipe["image"],
         prep_time=recipe["prep_time"],
         servings=recipe["servings"],
@@ -151,3 +199,5 @@ async def get_recipes_count(
     )
     
     return {"count": count}
+
+
